@@ -1,0 +1,66 @@
+[2024-08-13T15:44:16.985+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-13T15:44:17.260+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Scrape_Province.Truncate_Raw_Province scheduled__2024-08-12T00:00:00+00:00 [queued]>
+[2024-08-13T15:44:17.279+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Scrape_Province.Truncate_Raw_Province scheduled__2024-08-12T00:00:00+00:00 [queued]>
+[2024-08-13T15:44:17.280+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-13T15:44:17.330+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): Truncate_Raw_Province> on 2024-08-12 00:00:00+00:00
+[2024-08-13T15:44:17.340+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=112) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-13T15:44:17.345+0000] {standard_task_runner.py:63} INFO - Started process 114 to run task
+[2024-08-13T15:44:17.344+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Scrape_Province', 'Truncate_Raw_Province', 'scheduled__2024-08-12T00:00:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/Province_Extraction.py', '--cfg-path', '/tmp/tmpgjgqtjh0']
+[2024-08-13T15:44:17.351+0000] {standard_task_runner.py:91} INFO - Job 29: Subtask Truncate_Raw_Province
+[2024-08-13T15:44:17.383+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-13T15:44:17.483+0000] {task_command.py:426} INFO - Running <TaskInstance: Scrape_Province.Truncate_Raw_Province scheduled__2024-08-12T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-13T15:44:17.660+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Scrape_Province' AIRFLOW_CTX_TASK_ID='Truncate_Raw_Province' AIRFLOW_CTX_EXECUTION_DATE='2024-08-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-12T00:00:00+00:00'
+[2024-08-13T15:44:17.665+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-13T15:44:17.745+0000] {base.py:84} INFO - Using connection ID 'snowflake_conn_raw' for task execution.
+[2024-08-13T15:44:17.750+0000] {connection.py:399} INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.12.4, Platform: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2024-08-13T15:44:17.752+0000] {connection.py:1239} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-08-13T15:44:18.901+0000] {logging_mixin.py:188} INFO - Connected Successfully!
+[2024-08-13T15:44:18.902+0000] {logging_mixin.py:188} INFO - 
+        TRUNCATE TABLE RAW_PROVINCE;
+    
+[2024-08-13T15:44:19.194+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2024-08-13T15:44:19.195+0000] {connection.py:762} INFO - closed
+[2024-08-13T15:44:19.267+0000] {connection.py:768} INFO - No async queries seem to be running, deleting session
+[2024-08-13T15:44:19.342+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-13T15:44:19.344+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-13T15:44:19.364+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Scrape_Province, task_id=Truncate_Raw_Province, run_id=scheduled__2024-08-12T00:00:00+00:00, execution_date=20240812T000000, start_date=20240813T154417, end_date=20240813T154419
+[2024-08-13T15:44:19.421+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-13T15:44:19.473+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-13T15:44:19.476+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-08-13T15:48:28.100+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-13T15:48:28.355+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Scrape_Province.Truncate_Raw_Province scheduled__2024-08-12T00:00:00+00:00 [queued]>
+[2024-08-13T15:48:28.371+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Scrape_Province.Truncate_Raw_Province scheduled__2024-08-12T00:00:00+00:00 [queued]>
+[2024-08-13T15:48:28.372+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-13T15:48:28.415+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): Truncate_Raw_Province> on 2024-08-12 00:00:00+00:00
+[2024-08-13T15:48:28.430+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=185) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-13T15:48:28.435+0000] {standard_task_runner.py:63} INFO - Started process 194 to run task
+[2024-08-13T15:48:28.436+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Scrape_Province', 'Truncate_Raw_Province', 'scheduled__2024-08-12T00:00:00+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/Province_Extraction.py', '--cfg-path', '/tmp/tmpgyhhbu_z']
+[2024-08-13T15:48:28.444+0000] {standard_task_runner.py:91} INFO - Job 36: Subtask Truncate_Raw_Province
+[2024-08-13T15:48:28.479+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-13T15:48:28.582+0000] {task_command.py:426} INFO - Running <TaskInstance: Scrape_Province.Truncate_Raw_Province scheduled__2024-08-12T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-13T15:48:28.801+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Scrape_Province' AIRFLOW_CTX_TASK_ID='Truncate_Raw_Province' AIRFLOW_CTX_EXECUTION_DATE='2024-08-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-12T00:00:00+00:00'
+[2024-08-13T15:48:28.805+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-13T15:48:28.849+0000] {base.py:84} INFO - Using connection ID 'snowflake_conn_raw' for task execution.
+[2024-08-13T15:48:28.851+0000] {connection.py:399} INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.12.4, Platform: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2024-08-13T15:48:28.854+0000] {connection.py:1239} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-08-13T15:48:30.009+0000] {logging_mixin.py:188} INFO - Connected Successfully!
+[2024-08-13T15:48:30.010+0000] {logging_mixin.py:188} INFO - 
+        TRUNCATE TABLE RAW_PROVINCE;
+    
+[2024-08-13T15:48:30.386+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2024-08-13T15:48:30.388+0000] {connection.py:762} INFO - closed
+[2024-08-13T15:48:30.462+0000] {connection.py:768} INFO - No async queries seem to be running, deleting session
+[2024-08-13T15:48:30.540+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-13T15:48:30.543+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-13T15:48:30.567+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Scrape_Province, task_id=Truncate_Raw_Province, run_id=scheduled__2024-08-12T00:00:00+00:00, execution_date=20240812T000000, start_date=20240813T154828, end_date=20240813T154830
+[2024-08-13T15:48:30.665+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-13T15:48:30.736+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-13T15:48:30.742+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

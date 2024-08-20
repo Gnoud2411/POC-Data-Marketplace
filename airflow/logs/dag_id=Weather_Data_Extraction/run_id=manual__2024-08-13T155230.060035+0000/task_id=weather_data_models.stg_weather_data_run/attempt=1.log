@@ -1,0 +1,135 @@
+[2024-08-13T15:53:51.376+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-13T15:53:51.655+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.weather_data_models.stg_weather_data_run manual__2024-08-13T15:52:30.060035+00:00 [queued]>
+[2024-08-13T15:53:51.670+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.weather_data_models.stg_weather_data_run manual__2024-08-13T15:52:30.060035+00:00 [queued]>
+[2024-08-13T15:53:51.671+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2024-08-13T15:53:51.693+0000] {taskinstance.py:2330} INFO - Executing <Task(DbtRunLocalOperator): weather_data_models.stg_weather_data_run> on 2024-08-13 15:52:30.060035+00:00
+[2024-08-13T15:53:51.704+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=395) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-13T15:53:51.707+0000] {standard_task_runner.py:63} INFO - Started process 397 to run task
+[2024-08-13T15:53:51.707+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'weather_data_models.stg_weather_data_run', 'manual__2024-08-13T15:52:30.060035+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmpty4aypmp']
+[2024-08-13T15:53:51.711+0000] {standard_task_runner.py:91} INFO - Job 59: Subtask weather_data_models.stg_weather_data_run
+[2024-08-13T15:53:51.729+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-13T15:53:51.779+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.weather_data_models.stg_weather_data_run manual__2024-08-13T15:52:30.060035+00:00 [running]> on host ubuntu
+[2024-08-13T15:53:51.939+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='weather_data_models.stg_weather_data_run' AIRFLOW_CTX_EXECUTION_DATE='2024-08-13T15:52:30.060035+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-13T15:52:30.060035+00:00'
+[2024-08-13T15:53:51.942+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-13T15:53:51.991+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:51.991+0000[0m] {[34mgraph.py:[0m377} INFO[0m - [35m(astronomer-cosmos)[0m - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_dag_filterd__customers_group...[0m
+[2024-08-13T15:53:51.992+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:51.991+0000[0m] {[34mgraph.py:[0m377} INFO[0m - [35m(astronomer-cosmos)[0m - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_dag_filterd__customers_group...[0m
+[2024-08-13T15:53:51.991+0000] {graph.py:377} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_dag_filterd__customers_group...
+[2024-08-13T15:53:52.514+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.514+0000[0m] {[34mcache.py:[0m262} INFO[0m - [35m(astronomer-cosmos)[0m - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_dag_filterd__customers_group for current version: 0.5049497380000503[0m
+[2024-08-13T15:53:52.515+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.514+0000[0m] {[34mcache.py:[0m262} INFO[0m - [35m(astronomer-cosmos)[0m - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_dag_filterd__customers_group for current version: 0.5049497380000503[0m
+[2024-08-13T15:53:52.514+0000] {cache.py:262} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_dag_filterd__customers_group for current version: 0.5049497380000503
+[2024-08-13T15:53:52.517+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.517+0000[0m] {[34mgraph.py:[0m394} INFO[0m - [35m(astronomer-cosmos)[0m - Cosmos performance [ubuntu|397]: The cache size for cosmos_cache__dbt_dag_filterd__customers_group is 3021[0m
+[2024-08-13T15:53:52.518+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.517+0000[0m] {[34mgraph.py:[0m394} INFO[0m - [35m(astronomer-cosmos)[0m - Cosmos performance [ubuntu|397]: The cache size for cosmos_cache__dbt_dag_filterd__customers_group is 3021[0m
+[2024-08-13T15:53:52.517+0000] {graph.py:394} INFO - Cosmos performance [ubuntu|397]: The cache size for cosmos_cache__dbt_dag_filterd__customers_group is 3021
+[2024-08-13T15:53:52.519+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.519+0000[0m] {[34mgraph.py:[0m402} INFO[0m - [35m(astronomer-cosmos)[0m - Cosmos performance: Cache hit for cosmos_cache__dbt_dag_filterd__customers_group - e817fdfdc4cadaa2fe870bd62a4c3e2e,5f7d44698c4b67134aff532494870c9c[0m
+[2024-08-13T15:53:52.520+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.519+0000[0m] {[34mgraph.py:[0m402} INFO[0m - [35m(astronomer-cosmos)[0m - Cosmos performance: Cache hit for cosmos_cache__dbt_dag_filterd__customers_group - e817fdfdc4cadaa2fe870bd62a4c3e2e,5f7d44698c4b67134aff532494870c9c[0m
+[2024-08-13T15:53:52.519+0000] {graph.py:402} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_dag_filterd__customers_group - e817fdfdc4cadaa2fe870bd62a4c3e2e,5f7d44698c4b67134aff532494870c9c
+[2024-08-13T15:53:52.521+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.521+0000[0m] {[34mgraph.py:[0m335} INFO[0m - [35m(astronomer-cosmos)[0m - Total nodes: 3[0m
+[2024-08-13T15:53:52.522+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.521+0000[0m] {[34mgraph.py:[0m335} INFO[0m - [35m(astronomer-cosmos)[0m - Total nodes: 3[0m
+[2024-08-13T15:53:52.521+0000] {graph.py:335} INFO - Total nodes: 3
+[2024-08-13T15:53:52.523+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.523+0000[0m] {[34mgraph.py:[0m336} INFO[0m - [35m(astronomer-cosmos)[0m - Total filtered nodes: 3[0m
+[2024-08-13T15:53:52.524+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.523+0000[0m] {[34mgraph.py:[0m336} INFO[0m - [35m(astronomer-cosmos)[0m - Total filtered nodes: 3[0m
+[2024-08-13T15:53:52.523+0000] {graph.py:336} INFO - Total filtered nodes: 3
+[2024-08-13T15:53:52.525+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.525+0000[0m] {[34mconverter.py:[0m251} INFO[0m - [35m(astronomer-cosmos)[0m - Cosmos performance (dbt_dag_filterd__customers_group) -  [ubuntu|397]: It took 0.534s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE[0m
+[2024-08-13T15:53:52.526+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.525+0000[0m] {[34mconverter.py:[0m251} INFO[0m - [35m(astronomer-cosmos)[0m - Cosmos performance (dbt_dag_filterd__customers_group) -  [ubuntu|397]: It took 0.534s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE[0m
+[2024-08-13T15:53:52.525+0000] {converter.py:251} INFO - Cosmos performance (dbt_dag_filterd__customers_group) -  [ubuntu|397]: It took 0.534s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2024-08-13T15:53:52.532+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.531+0000[0m] {[34mproject.py:[0m35} INFO[0m - [35m(astronomer-cosmos)[0m - Project /opt/***/dags/Data_Marketplace does not have {'packages.yml', 'dependencies.yml'}[0m
+[2024-08-13T15:53:52.532+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.531+0000[0m] {[34mproject.py:[0m35} INFO[0m - [35m(astronomer-cosmos)[0m - Project /opt/***/dags/Data_Marketplace does not have {'packages.yml', 'dependencies.yml'}[0m
+[2024-08-13T15:53:52.531+0000] {project.py:35} INFO - Project /opt/***/dags/Data_Marketplace does not have {'packages.yml', 'dependencies.yml'}
+[2024-08-13T15:53:52.537+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.536+0000[0m] {[34mproject.py:[0m35} INFO[0m - [35m(astronomer-cosmos)[0m - Project /opt/***/dags/Data_Marketplace does not have {'packages.yml', 'dependencies.yml'}[0m
+[2024-08-13T15:53:52.538+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.536+0000[0m] {[34mproject.py:[0m35} INFO[0m - [35m(astronomer-cosmos)[0m - Project /opt/***/dags/Data_Marketplace does not have {'packages.yml', 'dependencies.yml'}[0m
+[2024-08-13T15:53:52.536+0000] {project.py:35} INFO - Project /opt/***/dags/Data_Marketplace does not have {'packages.yml', 'dependencies.yml'}
+[2024-08-13T15:53:52.543+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.542+0000[0m] {[34mproject.py:[0m35} INFO[0m - [35m(astronomer-cosmos)[0m - Project /opt/***/dags/Data_Marketplace does not have {'packages.yml', 'dependencies.yml'}[0m
+[2024-08-13T15:53:52.543+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.542+0000[0m] {[34mproject.py:[0m35} INFO[0m - [35m(astronomer-cosmos)[0m - Project /opt/***/dags/Data_Marketplace does not have {'packages.yml', 'dependencies.yml'}[0m
+[2024-08-13T15:53:52.542+0000] {project.py:35} INFO - Project /opt/***/dags/Data_Marketplace does not have {'packages.yml', 'dependencies.yml'}
+[2024-08-13T15:53:52.545+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.545+0000[0m] {[34mconverter.py:[0m293} INFO[0m - [35m(astronomer-cosmos)[0m - Cosmos performance (dbt_dag_filterd__customers_group) - [ubuntu|397]: It took 0.0197s to build the Airflow DAG.[0m
+[2024-08-13T15:53:52.545+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.545+0000[0m] {[34mconverter.py:[0m293} INFO[0m - [35m(astronomer-cosmos)[0m - Cosmos performance (dbt_dag_filterd__customers_group) - [ubuntu|397]: It took 0.0197s to build the Airflow DAG.[0m
+[2024-08-13T15:53:52.545+0000] {converter.py:293} INFO - Cosmos performance (dbt_dag_filterd__customers_group) - [ubuntu|397]: It took 0.0197s to build the Airflow DAG.
+[2024-08-13T15:53:52.548+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.548+0000[0m] {[34mlocal.py:[0m174} INFO[0m - [35m(astronomer-cosmos)[0m - Could not import dbtRunner. Falling back to subprocess for invoking dbt.[0m
+[2024-08-13T15:53:52.549+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.548+0000[0m] {[34mlocal.py:[0m174} INFO[0m - [35m(astronomer-cosmos)[0m - Could not import dbtRunner. Falling back to subprocess for invoking dbt.[0m
+[2024-08-13T15:53:52.548+0000] {local.py:174} INFO - Could not import dbtRunner. Falling back to subprocess for invoking dbt.
+[2024-08-13T15:53:52.551+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.551+0000[0m] {[34mlocal.py:[0m292} INFO[0m - [35m(astronomer-cosmos)[0m - Cloning project to writable temp directory /tmp/tmp0kibsh9e from /opt/***/dags/Data_Marketplace[0m
+[2024-08-13T15:53:52.552+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.551+0000[0m] {[34mlocal.py:[0m292} INFO[0m - [35m(astronomer-cosmos)[0m - Cloning project to writable temp directory /tmp/tmp0kibsh9e from /opt/***/dags/Data_Marketplace[0m
+[2024-08-13T15:53:52.551+0000] {local.py:292} INFO - Cloning project to writable temp directory /tmp/tmp0kibsh9e from /opt/airflow/dags/Data_Marketplace
+[2024-08-13T15:53:52.575+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.574+0000[0m] {[34mlocal.py:[0m303} INFO[0m - [35m(astronomer-cosmos)[0m - Partial parse is enabled and the latest partial parse file is /opt/***/dags/Data_Marketplace/target/partial_parse.msgpack[0m
+[2024-08-13T15:53:52.576+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.574+0000[0m] {[34mlocal.py:[0m303} INFO[0m - [35m(astronomer-cosmos)[0m - Partial parse is enabled and the latest partial parse file is /opt/***/dags/Data_Marketplace/target/partial_parse.msgpack[0m
+[2024-08-13T15:53:52.574+0000] {local.py:303} INFO - Partial parse is enabled and the latest partial parse file is /opt/airflow/dags/Data_Marketplace/target/partial_parse.msgpack
+[2024-08-13T15:53:52.636+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.635+0000[0m] {[34mconfig.py:[0m292} INFO[0m - [35m(astronomer-cosmos)[0m - Profile caching is enable.[0m
+[2024-08-13T15:53:52.637+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.635+0000[0m] {[34mconfig.py:[0m292} INFO[0m - [35m(astronomer-cosmos)[0m - Profile caching is enable.[0m
+[2024-08-13T15:53:52.635+0000] {config.py:292} INFO - Profile caching is enable.
+[2024-08-13T15:53:52.663+0000] {base.py:84} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-08-13T15:53:52.679+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.678+0000[0m] {[34mconfig.py:[0m272} INFO[0m - [35m(astronomer-cosmos)[0m - Profile found in cache using profile: /tmp/cosmos/profile/ec71862f850e9b0839075fe0561d5062ab3dd99ef2a3dac2fe4fc1486f2849d0/profiles.yml.[0m
+[2024-08-13T15:53:52.680+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.678+0000[0m] {[34mconfig.py:[0m272} INFO[0m - [35m(astronomer-cosmos)[0m - Profile found in cache using profile: /tmp/cosmos/profile/ec71862f850e9b0839075fe0561d5062ab3dd99ef2a3dac2fe4fc1486f2849d0/profiles.yml.[0m
+[2024-08-13T15:53:52.678+0000] {config.py:272} INFO - Profile found in cache using profile: /tmp/cosmos/profile/ec71862f850e9b0839075fe0561d5062ab3dd99ef2a3dac2fe4fc1486f2849d0/profiles.yml.
+[2024-08-13T15:53:52.683+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.682+0000[0m] {[34mlocal.py:[0m247} INFO[0m - [35m(astronomer-cosmos)[0m - Trying to run the command:
+ ['/opt/***/dbt_venv/bin/dbt', 'run', '--models', 'stg_weather_data', '--project-dir', '/tmp/tmp0kibsh9e', '--profiles-dir', '/tmp/cosmos/profile/ec71862f850e9b0839075fe0561d5062ab3dd99ef2a3dac2fe4fc1486f2849d0', '--profile', 'Data_Marketplace', '--target', 'dev']
+From /tmp/tmp0kibsh9e[0m
+[2024-08-13T15:53:52.684+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.682+0000[0m] {[34mlocal.py:[0m247} INFO[0m - [35m(astronomer-cosmos)[0m - Trying to run the command:
+ ['/opt/***/dbt_venv/bin/dbt', 'run', '--models', 'stg_weather_data', '--project-dir', '/tmp/tmp0kibsh9e', '--profiles-dir', '/tmp/cosmos/profile/ec71862f850e9b0839075fe0561d5062ab3dd99ef2a3dac2fe4fc1486f2849d0', '--profile', 'Data_Marketplace', '--target', 'dev']
+From /tmp/tmp0kibsh9e[0m
+[2024-08-13T15:53:52.682+0000] {local.py:247} INFO - Trying to run the command:
+ ['/opt/***/dbt_venv/bin/dbt', 'run', '--models', 'stg_weather_data', '--project-dir', '/tmp/tmp0kibsh9e', '--profiles-dir', '/tmp/cosmos/profile/ec71862f850e9b0839075fe0561d5062ab3dd99ef2a3dac2fe4fc1486f2849d0', '--profile', 'Data_Marketplace', '--target', 'dev']
+From /tmp/tmp0kibsh9e
+[2024-08-13T15:53:52.687+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.687+0000[0m] {[34msubprocess.py:[0m60} INFO[0m - [35m(astronomer-cosmos)[0m - Tmp dir root location: 
+ /tmp[0m
+[2024-08-13T15:53:52.688+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.687+0000[0m] {[34msubprocess.py:[0m60} INFO[0m - [35m(astronomer-cosmos)[0m - Tmp dir root location: 
+ /tmp[0m
+[2024-08-13T15:53:52.687+0000] {subprocess.py:60} INFO - Tmp dir root location: 
+ /tmp
+[2024-08-13T15:53:52.690+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.689+0000[0m] {[34msubprocess.py:[0m73} INFO[0m - [35m(astronomer-cosmos)[0m - Running command: ['/opt/***/dbt_venv/bin/dbt', 'run', '--models', 'stg_weather_data', '--project-dir', '/tmp/tmp0kibsh9e', '--profiles-dir', '/tmp/cosmos/profile/ec71862f850e9b0839075fe0561d5062ab3dd99ef2a3dac2fe4fc1486f2849d0', '--profile', 'Data_Marketplace', '--target', 'dev'][0m
+[2024-08-13T15:53:52.691+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.689+0000[0m] {[34msubprocess.py:[0m73} INFO[0m - [35m(astronomer-cosmos)[0m - Running command: ['/opt/***/dbt_venv/bin/dbt', 'run', '--models', 'stg_weather_data', '--project-dir', '/tmp/tmp0kibsh9e', '--profiles-dir', '/tmp/cosmos/profile/ec71862f850e9b0839075fe0561d5062ab3dd99ef2a3dac2fe4fc1486f2849d0', '--profile', 'Data_Marketplace', '--target', 'dev'][0m
+[2024-08-13T15:53:52.689+0000] {subprocess.py:73} INFO - Running command: ['/opt/***/dbt_venv/bin/dbt', 'run', '--models', 'stg_weather_data', '--project-dir', '/tmp/tmp0kibsh9e', '--profiles-dir', '/tmp/cosmos/profile/ec71862f850e9b0839075fe0561d5062ab3dd99ef2a3dac2fe4fc1486f2849d0', '--profile', 'Data_Marketplace', '--target', 'dev']
+[2024-08-13T15:53:52.729+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.729+0000[0m] {[34msubprocess.py:[0m84} INFO[0m - [35m(astronomer-cosmos)[0m - Command output:[0m
+[2024-08-13T15:53:52.731+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:52.729+0000[0m] {[34msubprocess.py:[0m84} INFO[0m - [35m(astronomer-cosmos)[0m - Command output:[0m
+[2024-08-13T15:53:52.729+0000] {subprocess.py:84} INFO - Command output:
+[2024-08-13T15:53:56.348+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:56.346+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:53:56  Running with dbt=1.8.5[0m
+[2024-08-13T15:53:56.348+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:56.346+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:53:56  Running with dbt=1.8.5[0m
+[2024-08-13T15:53:56.346+0000] {subprocess.py:94} INFO - [0m15:53:56  Running with dbt=1.8.5
+[2024-08-13T15:53:57.245+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:57.244+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:53:57  Registered adapter: snowflake=1.8.3[0m
+[2024-08-13T15:53:57.246+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:57.244+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:53:57  Registered adapter: snowflake=1.8.3[0m
+[2024-08-13T15:53:57.244+0000] {subprocess.py:94} INFO - [0m15:53:57  Registered adapter: snowflake=1.8.3
+[2024-08-13T15:53:57.628+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:57.627+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:53:57  Unable to do partial parsing because of a version mismatch[0m
+[2024-08-13T15:53:57.631+0000] {log.py:232} WARNING - [[34m2024-08-13T15:53:57.627+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:53:57  Unable to do partial parsing because of a version mismatch[0m
+[2024-08-13T15:53:57.627+0000] {subprocess.py:94} INFO - [0m15:53:57  Unable to do partial parsing because of a version mismatch
+[2024-08-13T15:54:02.736+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:02.735+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:02  Found 9 models, 2 snapshots, 3 seeds, 2 data tests, 3 sources, 448 macros[0m
+[2024-08-13T15:54:02.737+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:02.735+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:02  Found 9 models, 2 snapshots, 3 seeds, 2 data tests, 3 sources, 448 macros[0m
+[2024-08-13T15:54:02.735+0000] {subprocess.py:94} INFO - [0m15:54:02  Found 9 models, 2 snapshots, 3 seeds, 2 data tests, 3 sources, 448 macros
+[2024-08-13T15:54:02.739+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:02.739+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:02[0m
+[2024-08-13T15:54:02.740+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:02.739+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:02[0m
+[2024-08-13T15:54:02.739+0000] {subprocess.py:94} INFO - [0m15:54:02
+[2024-08-13T15:54:04.468+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:04.468+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:04  Concurrency: 1 threads (target='dev')[0m
+[2024-08-13T15:54:04.472+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:04.468+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:04  Concurrency: 1 threads (target='dev')[0m
+[2024-08-13T15:54:04.468+0000] {subprocess.py:94} INFO - [0m15:54:04  Concurrency: 1 threads (target='dev')
+[2024-08-13T15:54:04.474+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:04.474+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:04[0m
+[2024-08-13T15:54:04.475+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:04.474+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:04[0m
+[2024-08-13T15:54:04.474+0000] {subprocess.py:94} INFO - [0m15:54:04
+[2024-08-13T15:54:04.532+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:04.531+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:04[0m
+[2024-08-13T15:54:04.534+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:04.531+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:04[0m
+[2024-08-13T15:54:04.531+0000] {subprocess.py:94} INFO - [0m15:54:04
+[2024-08-13T15:54:04.536+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:04.535+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:04  Finished running  in 0 hours 0 minutes and 1.79 seconds (1.79s).[0m
+[2024-08-13T15:54:04.537+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:04.535+0000[0m] {[34msubprocess.py:[0m94} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:04  Finished running  in 0 hours 0 minutes and 1.79 seconds (1.79s).[0m
+[2024-08-13T15:54:04.535+0000] {subprocess.py:94} INFO - [0m15:54:04  Finished running  in 0 hours 0 minutes and 1.79 seconds (1.79s).
+[2024-08-13T15:54:06.871+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:06.870+0000[0m] {[34msubprocess.py:[0m98} INFO[0m - [35m(astronomer-cosmos)[0m - Command exited with return code 0[0m
+[2024-08-13T15:54:06.872+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:06.870+0000[0m] {[34msubprocess.py:[0m98} INFO[0m - [35m(astronomer-cosmos)[0m - Command exited with return code 0[0m
+[2024-08-13T15:54:06.870+0000] {subprocess.py:98} INFO - Command exited with return code 0
+[2024-08-13T15:54:06.874+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:06.874+0000[0m] {[34mlocal.py:[0m254} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:04  Finished running  in 0 hours 0 minutes and 1.79 seconds (1.79s).[0m
+[2024-08-13T15:54:06.875+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:06.874+0000[0m] {[34mlocal.py:[0m254} INFO[0m - [35m(astronomer-cosmos)[0m - [0m15:54:04  Finished running  in 0 hours 0 minutes and 1.79 seconds (1.79s).[0m
+[2024-08-13T15:54:06.874+0000] {local.py:254} INFO - [0m15:54:04  Finished running  in 0 hours 0 minutes and 1.79 seconds (1.79s).
+[2024-08-13T15:54:06.910+0000] {local.py:196} WARNING - Artifact schema version: https://schemas.getdbt.com/dbt/manifest/v12.json is above dbt-ol supported version 7. This might cause errors.
+[2024-08-13T15:54:06.912+0000] {local.py:196} WARNING - Artifact schema version: https://schemas.getdbt.com/dbt/run-results/v6.json is above dbt-ol supported version 5. This might cause errors.
+[2024-08-13T15:54:06.927+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:06.927+0000[0m] {[34mlocal.py:[0m349} INFO[0m - [35m(astronomer-cosmos)[0m - Inlets: [][0m
+[2024-08-13T15:54:06.928+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:06.927+0000[0m] {[34mlocal.py:[0m349} INFO[0m - [35m(astronomer-cosmos)[0m - Inlets: [][0m
+[2024-08-13T15:54:06.927+0000] {local.py:349} INFO - Inlets: []
+[2024-08-13T15:54:06.930+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:06.930+0000[0m] {[34mlocal.py:[0m350} INFO[0m - [35m(astronomer-cosmos)[0m - Outlets: [][0m
+[2024-08-13T15:54:06.931+0000] {log.py:232} WARNING - [[34m2024-08-13T15:54:06.930+0000[0m] {[34mlocal.py:[0m350} INFO[0m - [35m(astronomer-cosmos)[0m - Outlets: [][0m
+[2024-08-13T15:54:06.930+0000] {local.py:350} INFO - Outlets: []
+[2024-08-13T15:54:06.932+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-08-13T15:54:06.962+0000] {dag.py:3954} INFO - Setting next_dagrun for Weather_Data_Extraction to None, run_after=None
+[2024-08-13T15:54:07.008+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-13T15:54:07.035+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=weather_data_models.stg_weather_data_run, run_id=manual__2024-08-13T15:52:30.060035+00:00, execution_date=20240813T155230, start_date=20240813T155351, end_date=20240813T155407
+[2024-08-13T15:54:07.116+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-13T15:54:07.189+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-13T15:54:07.195+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

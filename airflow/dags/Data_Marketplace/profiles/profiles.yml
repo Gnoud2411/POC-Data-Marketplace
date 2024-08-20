@@ -1,0 +1,13 @@
+Data_Marketplace:
+  target: dev
+  outputs:
+    dev:
+      account: uz36730.ap-southeast-1
+      database: POC_DATA_MARKETPLACE
+      password: Doviethung24112002@
+      role: DBT_CONSUMER
+      schema: DWH
+      threads: 3
+      type: snowflake
+      user: dbt_user
+      warehouse: DBT_WH

@@ -1,0 +1,38 @@
+[2024-08-16T09:45:01.821+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-16T09:45:02.020+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.Trigger_DAG_Prediction_Model backfill__2024-08-12T00:00:00+00:00 [queued]>
+[2024-08-16T09:45:02.030+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.Trigger_DAG_Prediction_Model backfill__2024-08-12T00:00:00+00:00 [queued]>
+[2024-08-16T09:45:02.030+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-16T09:45:02.046+0000] {taskinstance.py:2330} INFO - Executing <Task(TriggerDagRunOperator): Trigger_DAG_Prediction_Model> on 2024-08-12 00:00:00+00:00
+[2024-08-16T09:45:02.054+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1508) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-16T09:45:02.055+0000] {standard_task_runner.py:63} INFO - Started process 1510 to run task
+[2024-08-16T09:45:02.056+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'Trigger_DAG_Prediction_Model', 'backfill__2024-08-12T00:00:00+00:00', '--job-id', '1174', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmpglf3u9k_']
+[2024-08-16T09:45:02.059+0000] {standard_task_runner.py:91} INFO - Job 1174: Subtask Trigger_DAG_Prediction_Model
+[2024-08-16T09:45:02.117+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.Trigger_DAG_Prediction_Model backfill__2024-08-12T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-16T09:45:02.208+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='Trigger_DAG_Prediction_Model' AIRFLOW_CTX_EXECUTION_DATE='2024-08-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2024-08-12T00:00:00+00:00'
+[2024-08-16T09:45:02.210+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-16T09:45:02.317+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-16T09:45:02.326+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=Trigger_DAG_Prediction_Model, run_id=backfill__2024-08-12T00:00:00+00:00, execution_date=20240812T000000, start_date=20240816T094502, end_date=20240816T094502
+[2024-08-16T09:45:02.351+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-16T09:45:02.375+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-16T09:45:02.379+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-08-16T10:08:40.048+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-16T10:08:40.195+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.Trigger_DAG_Prediction_Model backfill__2024-08-12T00:00:00+00:00 [queued]>
+[2024-08-16T10:08:40.202+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.Trigger_DAG_Prediction_Model backfill__2024-08-12T00:00:00+00:00 [queued]>
+[2024-08-16T10:08:40.203+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-16T10:08:40.216+0000] {taskinstance.py:2330} INFO - Executing <Task(TriggerDagRunOperator): Trigger_DAG_Prediction_Model> on 2024-08-12 00:00:00+00:00
+[2024-08-16T10:08:40.223+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2274) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-16T10:08:40.225+0000] {standard_task_runner.py:63} INFO - Started process 2276 to run task
+[2024-08-16T10:08:40.225+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'Trigger_DAG_Prediction_Model', 'backfill__2024-08-12T00:00:00+00:00', '--job-id', '1259', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmp_gtj3cas']
+[2024-08-16T10:08:40.227+0000] {standard_task_runner.py:91} INFO - Job 1259: Subtask Trigger_DAG_Prediction_Model
+[2024-08-16T10:08:40.268+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.Trigger_DAG_Prediction_Model backfill__2024-08-12T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-16T10:08:40.352+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='Trigger_DAG_Prediction_Model' AIRFLOW_CTX_EXECUTION_DATE='2024-08-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2024-08-12T00:00:00+00:00'
+[2024-08-16T10:08:40.353+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-16T10:08:40.428+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-16T10:08:40.436+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=Trigger_DAG_Prediction_Model, run_id=backfill__2024-08-12T00:00:00+00:00, execution_date=20240812T000000, start_date=20240816T100840, end_date=20240816T100840
+[2024-08-16T10:08:40.479+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-16T10:08:40.494+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-16T10:08:40.496+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

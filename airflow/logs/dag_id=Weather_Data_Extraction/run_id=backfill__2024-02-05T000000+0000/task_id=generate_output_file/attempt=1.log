@@ -1,0 +1,102 @@
+[2024-08-13T16:09:15.183+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-13T16:09:15.212+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.generate_output_file backfill__2024-02-05T00:00:00+00:00 [queued]>
+[2024-08-13T16:09:15.491+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.generate_output_file backfill__2024-02-05T00:00:00+00:00 [queued]>
+[2024-08-13T16:09:15.492+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-13T16:09:15.525+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_output_file> on 2024-02-05 00:00:00+00:00
+[2024-08-13T16:09:15.538+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=981) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-13T16:09:15.542+0000] {standard_task_runner.py:63} INFO - Started process 993 to run task
+[2024-08-13T16:09:15.555+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'generate_output_file', 'backfill__2024-02-05T00:00:00+00:00', '--job-id', '171', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmpzwrz4ic_']
+[2024-08-13T16:09:15.560+0000] {standard_task_runner.py:91} INFO - Job 171: Subtask generate_output_file
+[2024-08-13T16:09:15.587+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-13T16:09:15.664+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.generate_output_file backfill__2024-02-05T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-13T16:09:16.001+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='generate_output_file' AIRFLOW_CTX_EXECUTION_DATE='2024-02-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2024-02-05T00:00:00+00:00'
+[2024-08-13T16:09:16.006+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-13T16:09:16.049+0000] {logging_mixin.py:188} INFO - Generated output file: Data_Weather-20240205.csv
+[2024-08-13T16:09:16.050+0000] {logging_mixin.py:188} INFO - Execution Date: 2024/02/05
+[2024-08-13T16:09:16.152+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-13T16:09:16.154+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-13T16:09:16.189+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=generate_output_file, run_id=backfill__2024-02-05T00:00:00+00:00, execution_date=20240205T000000, start_date=20240813T160915, end_date=20240813T160916
+[2024-08-13T16:09:16.286+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-13T16:09:17.378+0000] {taskinstance.py:3509} WARNING - Skipping mini scheduling run due to exception: UPDATE task_instance SET state=%(state)s, updated_at=%(updated_at)s WHERE task_instance.dag_id = %(dag_id_1)s AND task_instance.run_id = %(run_id_1)s AND (task_instance.task_id, task_instance.map_index) IN ((%(param_1_1_1)s, %(param_1_1_2)s))
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.DeadlockDetected: deadlock detected
+DETAIL:  Process 7474 waits for ShareLock on transaction 10667; blocked by process 4652.
+Process 4652 waits for ShareLock on transaction 10660; blocked by process 7474.
+HINT:  See server log for query details.
+CONTEXT:  while updating tuple (10,27) in relation "task_instance"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3502, in _schedule_downstream_tasks
+    num = dag_run.schedule_tis(schedulable_tis, session=session, max_tis_per_query=max_tis_per_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagrun.py", line 1551, in schedule_tis
+    count += session.execute(
+             ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1717, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (psycopg2.errors.DeadlockDetected) deadlock detected
+DETAIL:  Process 7474 waits for ShareLock on transaction 10667; blocked by process 4652.
+Process 4652 waits for ShareLock on transaction 10660; blocked by process 7474.
+HINT:  See server log for query details.
+CONTEXT:  while updating tuple (10,27) in relation "task_instance"
+
+[SQL: UPDATE task_instance SET state=%(state)s, updated_at=%(updated_at)s WHERE task_instance.dag_id = %(dag_id_1)s AND task_instance.run_id = %(run_id_1)s AND (task_instance.task_id, task_instance.map_index) IN ((%(param_1_1_1)s, %(param_1_1_2)s))]
+[parameters: {'state': <TaskInstanceState.SCHEDULED: 'scheduled'>, 'updated_at': datetime.datetime(2024, 8, 13, 16, 9, 16, 374440, tzinfo=Timezone('UTC')), 'dag_id_1': 'Weather_Data_Extraction', 'run_id_1': 'backfill__2024-02-05T00:00:00+00:00', 'param_1_1_1': 'check_inserted', 'param_1_1_2': -1}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-08-13T16:09:17.451+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-08-14T03:41:11.223+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-14T03:41:11.247+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.generate_output_file backfill__2024-02-05T00:00:00+00:00 [queued]>
+[2024-08-14T03:41:11.493+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.generate_output_file backfill__2024-02-05T00:00:00+00:00 [queued]>
+[2024-08-14T03:41:11.494+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-14T03:41:11.514+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_output_file> on 2024-02-05 00:00:00+00:00
+[2024-08-14T03:41:11.524+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1490) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-14T03:41:11.526+0000] {standard_task_runner.py:63} INFO - Started process 1492 to run task
+[2024-08-14T03:41:11.526+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'generate_output_file', 'backfill__2024-02-05T00:00:00+00:00', '--job-id', '499', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmpuiv8m08d']
+[2024-08-14T03:41:11.530+0000] {standard_task_runner.py:91} INFO - Job 499: Subtask generate_output_file
+[2024-08-14T03:41:11.597+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.generate_output_file backfill__2024-02-05T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-14T03:41:11.735+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='generate_output_file' AIRFLOW_CTX_EXECUTION_DATE='2024-02-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2024-02-05T00:00:00+00:00'
+[2024-08-14T03:41:11.738+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-14T03:41:11.771+0000] {logging_mixin.py:188} INFO - Generated output file: Data_Weather-20240205.csv
+[2024-08-14T03:41:11.772+0000] {logging_mixin.py:188} INFO - Execution Date: 2024/02/05
+[2024-08-14T03:41:11.817+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-14T03:41:11.819+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-14T03:41:11.840+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=generate_output_file, run_id=backfill__2024-02-05T00:00:00+00:00, execution_date=20240205T000000, start_date=20240814T034111, end_date=20240814T034111
+[2024-08-14T03:41:11.901+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-14T03:41:11.973+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-14T03:41:11.977+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

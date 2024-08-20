@@ -1,0 +1,1 @@
+[2024-08-19T07:26:50.257+0000] {scheduler_job_runner.py:769} ERROR - Executor reports task instance <TaskInstance: test_python_email_dag.send_email_task manual__2024-08-19T07:26:48.178180+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

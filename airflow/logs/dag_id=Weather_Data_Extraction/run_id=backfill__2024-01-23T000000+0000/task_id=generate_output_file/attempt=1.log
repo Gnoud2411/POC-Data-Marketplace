@@ -1,0 +1,47 @@
+[2024-08-13T16:08:29.602+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-13T16:08:29.653+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.generate_output_file backfill__2024-01-23T00:00:00+00:00 [queued]>
+[2024-08-13T16:08:30.027+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.generate_output_file backfill__2024-01-23T00:00:00+00:00 [queued]>
+[2024-08-13T16:08:30.033+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-13T16:08:30.082+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_output_file> on 2024-01-23 00:00:00+00:00
+[2024-08-13T16:08:30.170+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=856) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-13T16:08:30.213+0000] {standard_task_runner.py:63} INFO - Started process 867 to run task
+[2024-08-13T16:08:30.231+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'generate_output_file', 'backfill__2024-01-23T00:00:00+00:00', '--job-id', '131', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmp_360pvre']
+[2024-08-13T16:08:30.308+0000] {standard_task_runner.py:91} INFO - Job 131: Subtask generate_output_file
+[2024-08-13T16:08:30.544+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-13T16:08:31.085+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.generate_output_file backfill__2024-01-23T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-13T16:08:32.375+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='generate_output_file' AIRFLOW_CTX_EXECUTION_DATE='2024-01-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2024-01-23T00:00:00+00:00'
+[2024-08-13T16:08:32.399+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-13T16:08:32.495+0000] {logging_mixin.py:188} INFO - Generated output file: Data_Weather-20240123.csv
+[2024-08-13T16:08:32.497+0000] {logging_mixin.py:188} INFO - Execution Date: 2024/01/23
+[2024-08-13T16:08:32.585+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-13T16:08:32.592+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-13T16:08:32.628+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=generate_output_file, run_id=backfill__2024-01-23T00:00:00+00:00, execution_date=20240123T000000, start_date=20240813T160829, end_date=20240813T160832
+[2024-08-13T16:08:32.779+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-13T16:08:32.927+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-13T16:08:32.940+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-08-14T03:16:50.836+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-14T03:16:50.866+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.generate_output_file backfill__2024-01-23T00:00:00+00:00 [queued]>
+[2024-08-14T03:16:51.119+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.generate_output_file backfill__2024-01-23T00:00:00+00:00 [queued]>
+[2024-08-14T03:16:51.146+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-14T03:16:51.224+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_output_file> on 2024-01-23 00:00:00+00:00
+[2024-08-14T03:16:51.268+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=988) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-14T03:16:51.270+0000] {standard_task_runner.py:63} INFO - Started process 990 to run task
+[2024-08-14T03:16:51.270+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'generate_output_file', 'backfill__2024-01-23T00:00:00+00:00', '--job-id', '434', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmp5ayptrz6']
+[2024-08-14T03:16:51.273+0000] {standard_task_runner.py:91} INFO - Job 434: Subtask generate_output_file
+[2024-08-14T03:16:51.330+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.generate_output_file backfill__2024-01-23T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-14T03:16:51.459+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='generate_output_file' AIRFLOW_CTX_EXECUTION_DATE='2024-01-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2024-01-23T00:00:00+00:00'
+[2024-08-14T03:16:51.462+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-14T03:16:51.484+0000] {logging_mixin.py:188} INFO - Generated output file: Data_Weather-20240123.csv
+[2024-08-14T03:16:51.484+0000] {logging_mixin.py:188} INFO - Execution Date: 2024/01/23
+[2024-08-14T03:16:51.511+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-14T03:16:51.512+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-14T03:16:51.523+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=generate_output_file, run_id=backfill__2024-01-23T00:00:00+00:00, execution_date=20240123T000000, start_date=20240814T031650, end_date=20240814T031651
+[2024-08-14T03:16:51.566+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-14T03:16:51.608+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-14T03:16:51.612+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,163 @@
+[2024-08-16T09:17:23.788+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-16T09:17:23.981+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.check_s3_file backfill__2024-08-14T00:00:00+00:00 [queued]>
+[2024-08-16T09:17:23.988+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.check_s3_file backfill__2024-08-14T00:00:00+00:00 [queued]>
+[2024-08-16T09:17:23.989+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-16T09:17:24.003+0000] {taskinstance.py:2330} INFO - Executing <Task(S3KeySensor): check_s3_file> on 2024-08-14 00:00:00+00:00
+[2024-08-16T09:17:24.010+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1087) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-16T09:17:24.011+0000] {standard_task_runner.py:63} INFO - Started process 1089 to run task
+[2024-08-16T09:17:24.012+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'check_s3_file', 'backfill__2024-08-14T00:00:00+00:00', '--job-id', '1158', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmp0sexal2o']
+[2024-08-16T09:17:24.014+0000] {standard_task_runner.py:91} INFO - Job 1158: Subtask check_s3_file
+[2024-08-16T09:17:24.074+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.check_s3_file backfill__2024-08-14T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-16T09:17:24.231+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='check_s3_file' AIRFLOW_CTX_EXECUTION_DATE='2024-08-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2024-08-14T00:00:00+00:00'
+[2024-08-16T09:17:24.234+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-16T09:17:24.250+0000] {baseoperator.py:400} WARNING - S3KeySensor.execute cannot be called outside TaskInstance!
+[2024-08-16T09:17:24.251+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:17:24.269+0000] {base.py:84} INFO - Using connection ID 'aws_conn_poc' for task execution.
+[2024-08-16T09:17:24.271+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_conn_poc', conn_type='aws') credentials retrieved from login and password.
+[2024-08-16T09:17:55.452+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:18:26.042+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:18:56.608+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:19:27.230+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:19:57.806+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:20:29.380+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:20:59.999+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:21:30.658+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:22:01.285+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:22:32.008+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:23:02.752+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:23:33.539+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:24:04.157+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:24:34.815+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:25:05.665+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:25:36.467+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:26:07.072+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:26:38.027+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:27:08.804+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:27:28.734+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2024-08-16T09:27:28.737+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-08-16T09:27:28.740+0000] {process_utils.py:132} INFO - Sending 15 to group 1089. PIDs of all processes in the group: [1089]
+[2024-08-16T09:27:28.741+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 1089
+[2024-08-16T09:27:28.741+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-08-16T09:27:28.742+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-16T09:27:28.753+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/sensors/s3.py", line 183, in execute
+    super().execute(context)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/sensors/base.py", line 292, in execute
+    time.sleep(self._get_next_poke_interval(started_at, run_duration, try_number))
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2024-08-16T09:27:28.758+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=Weather_Data_Extraction, task_id=check_s3_file, run_id=backfill__2024-08-14T00:00:00+00:00, execution_date=20240814T000000, start_date=20240816T091723, end_date=20240816T092728
+[2024-08-16T09:27:28.776+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1158 for task check_s3_file ((psycopg2.errors.ForeignKeyViolation) insert or update on table "task_fail" violates foreign key constraint "task_fail_ti_fkey"
+DETAIL:  Key (dag_id, task_id, run_id, map_index)=(Weather_Data_Extraction, check_s3_file, backfill__2024-08-14T00:00:00+00:00, -1) is not present in table "task_instance".
+
+[SQL: INSERT INTO task_fail (task_id, dag_id, run_id, map_index, start_date, end_date, duration) VALUES (%(task_id)s, %(dag_id)s, %(run_id)s, %(map_index)s, %(start_date)s, %(end_date)s, %(duration)s) RETURNING task_fail.id]
+[parameters: {'task_id': 'check_s3_file', 'dag_id': 'Weather_Data_Extraction', 'run_id': 'backfill__2024-08-14T00:00:00+00:00', 'map_index': -1, 'start_date': datetime.datetime(2024, 8, 16, 9, 17, 23, 982293, tzinfo=Timezone('UTC')), 'end_date': datetime.datetime(2024, 8, 16, 9, 27, 28, 757169, tzinfo=Timezone('UTC')), 'duration': 604}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 1089)
+[2024-08-16T09:27:28.793+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1089, status='terminated', exitcode=1, started='09:17:23') (1089) terminated with exit code 1
+[2024-08-16T09:48:11.803+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-16T09:48:11.953+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.check_s3_file backfill__2024-08-14T00:00:00+00:00 [queued]>
+[2024-08-16T09:48:11.961+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.check_s3_file backfill__2024-08-14T00:00:00+00:00 [queued]>
+[2024-08-16T09:48:11.962+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-16T09:48:11.988+0000] {taskinstance.py:2330} INFO - Executing <Task(S3KeySensor): check_s3_file> on 2024-08-14 00:00:00+00:00
+[2024-08-16T09:48:11.998+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1704) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-16T09:48:12.001+0000] {standard_task_runner.py:63} INFO - Started process 1706 to run task
+[2024-08-16T09:48:12.002+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'check_s3_file', 'backfill__2024-08-14T00:00:00+00:00', '--job-id', '1200', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmpbh12qiso']
+[2024-08-16T09:48:12.007+0000] {standard_task_runner.py:91} INFO - Job 1200: Subtask check_s3_file
+[2024-08-16T09:48:12.077+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.check_s3_file backfill__2024-08-14T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-16T09:48:12.189+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='check_s3_file' AIRFLOW_CTX_EXECUTION_DATE='2024-08-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2024-08-14T00:00:00+00:00'
+[2024-08-16T09:48:12.191+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-16T09:48:12.206+0000] {baseoperator.py:400} WARNING - S3KeySensor.execute cannot be called outside TaskInstance!
+[2024-08-16T09:48:12.207+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:48:12.224+0000] {base.py:84} INFO - Using connection ID 'aws_conn_poc' for task execution.
+[2024-08-16T09:48:12.227+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_conn_poc', conn_type='aws') credentials retrieved from login and password.
+[2024-08-16T09:48:43.383+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:49:14.094+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:49:44.688+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:50:15.410+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:50:46.075+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:51:16.865+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:51:47.667+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:52:18.419+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:52:49.153+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:53:19.937+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:53:50.656+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:54:21.329+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:54:51.985+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:55:26.582+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T09:55:45.892+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2024-08-16T09:55:45.898+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-08-16T09:55:45.902+0000] {process_utils.py:132} INFO - Sending 15 to group 1706. PIDs of all processes in the group: [1706]
+[2024-08-16T09:55:45.904+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 1706
+[2024-08-16T09:55:45.906+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-08-16T09:55:45.908+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-16T09:55:45.938+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/sensors/s3.py", line 183, in execute
+    super().execute(context)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/sensors/base.py", line 292, in execute
+    time.sleep(self._get_next_poke_interval(started_at, run_duration, try_number))
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2024-08-16T09:55:45.949+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=Weather_Data_Extraction, task_id=check_s3_file, run_id=backfill__2024-08-14T00:00:00+00:00, execution_date=20240814T000000, start_date=20240816T094811, end_date=20240816T095545
+[2024-08-16T09:55:45.992+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1200 for task check_s3_file ((psycopg2.errors.ForeignKeyViolation) insert or update on table "task_fail" violates foreign key constraint "task_fail_ti_fkey"
+DETAIL:  Key (dag_id, task_id, run_id, map_index)=(Weather_Data_Extraction, check_s3_file, backfill__2024-08-14T00:00:00+00:00, -1) is not present in table "task_instance".
+
+[SQL: INSERT INTO task_fail (task_id, dag_id, run_id, map_index, start_date, end_date, duration) VALUES (%(task_id)s, %(dag_id)s, %(run_id)s, %(map_index)s, %(start_date)s, %(end_date)s, %(duration)s) RETURNING task_fail.id]
+[parameters: {'task_id': 'check_s3_file', 'dag_id': 'Weather_Data_Extraction', 'run_id': 'backfill__2024-08-14T00:00:00+00:00', 'map_index': -1, 'start_date': datetime.datetime(2024, 8, 16, 9, 48, 11, 954166, tzinfo=Timezone('UTC')), 'end_date': datetime.datetime(2024, 8, 16, 9, 55, 45, 946857, tzinfo=Timezone('UTC')), 'duration': 453}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 1706)
+[2024-08-16T09:55:46.039+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1706, status='terminated', exitcode=1, started='09:48:11') (1706) terminated with exit code 1
+[2024-08-16T10:13:05.127+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-16T10:13:05.376+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.check_s3_file backfill__2024-08-14T00:00:00+00:00 [queued]>
+[2024-08-16T10:13:05.395+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.check_s3_file backfill__2024-08-14T00:00:00+00:00 [queued]>
+[2024-08-16T10:13:05.396+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-16T10:13:05.423+0000] {taskinstance.py:2330} INFO - Executing <Task(S3KeySensor): check_s3_file> on 2024-08-14 00:00:00+00:00
+[2024-08-16T10:13:05.438+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2492) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-16T10:13:05.442+0000] {standard_task_runner.py:63} INFO - Started process 2494 to run task
+[2024-08-16T10:13:05.444+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'check_s3_file', 'backfill__2024-08-14T00:00:00+00:00', '--job-id', '1287', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmph0df83d9']
+[2024-08-16T10:13:05.450+0000] {standard_task_runner.py:91} INFO - Job 1287: Subtask check_s3_file
+[2024-08-16T10:13:05.570+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.check_s3_file backfill__2024-08-14T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-16T10:13:05.832+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='check_s3_file' AIRFLOW_CTX_EXECUTION_DATE='2024-08-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2024-08-14T00:00:00+00:00'
+[2024-08-16T10:13:05.837+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-16T10:13:05.869+0000] {baseoperator.py:400} WARNING - S3KeySensor.execute cannot be called outside TaskInstance!
+[2024-08-16T10:13:05.871+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240814.csv
+[2024-08-16T10:13:05.898+0000] {base.py:84} INFO - Using connection ID 'aws_conn_poc' for task execution.
+[2024-08-16T10:13:05.902+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_conn_poc', conn_type='aws') credentials retrieved from login and password.
+[2024-08-16T10:13:07.822+0000] {base.py:294} INFO - Success criteria met. Exiting.
+[2024-08-16T10:13:07.823+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-16T10:13:07.838+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=check_s3_file, run_id=backfill__2024-08-14T00:00:00+00:00, execution_date=20240814T000000, start_date=20240816T101305, end_date=20240816T101307
+[2024-08-16T10:13:07.911+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-16T10:13:07.960+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-16T10:13:07.968+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

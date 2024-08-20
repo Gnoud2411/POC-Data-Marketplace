@@ -1,0 +1,29 @@
+[2024-08-14T03:45:47.051+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-14T03:45:47.094+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.check_s3_file backfill__2024-02-06T00:00:00+00:00 [queued]>
+[2024-08-14T03:45:47.336+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.check_s3_file backfill__2024-02-06T00:00:00+00:00 [queued]>
+[2024-08-14T03:45:47.338+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-14T03:45:47.360+0000] {taskinstance.py:2330} INFO - Executing <Task(S3KeySensor): check_s3_file> on 2024-02-06 00:00:00+00:00
+[2024-08-14T03:45:47.381+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1571) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-14T03:45:47.384+0000] {standard_task_runner.py:63} INFO - Started process 1573 to run task
+[2024-08-14T03:45:47.385+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'check_s3_file', 'backfill__2024-02-06T00:00:00+00:00', '--job-id', '507', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmpp38ybpgh']
+[2024-08-14T03:45:47.388+0000] {standard_task_runner.py:91} INFO - Job 507: Subtask check_s3_file
+[2024-08-14T03:45:47.453+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.check_s3_file backfill__2024-02-06T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-14T03:45:47.624+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='check_s3_file' AIRFLOW_CTX_EXECUTION_DATE='2024-02-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2024-02-06T00:00:00+00:00'
+[2024-08-14T03:45:47.627+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-14T03:45:47.656+0000] {baseoperator.py:400} WARNING - S3KeySensor.execute cannot be called outside TaskInstance!
+[2024-08-14T03:45:47.658+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240206.csv
+[2024-08-14T03:45:47.680+0000] {base.py:84} INFO - Using connection ID 'aws_conn_poc' for task execution.
+[2024-08-14T03:45:47.682+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_conn_poc', conn_type='aws') credentials retrieved from login and password.
+[2024-08-14T03:46:18.981+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240206.csv
+[2024-08-14T03:46:49.584+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240206.csv
+[2024-08-14T03:47:20.226+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240206.csv
+[2024-08-14T03:47:50.981+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240206.csv
+[2024-08-14T03:48:21.691+0000] {s3.py:117} INFO - Poking for key : s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240206.csv
+[2024-08-14T03:48:22.351+0000] {base.py:294} INFO - Success criteria met. Exiting.
+[2024-08-14T03:48:22.353+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-14T03:48:22.380+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=check_s3_file, run_id=backfill__2024-02-06T00:00:00+00:00, execution_date=20240206T000000, start_date=20240814T034547, end_date=20240814T034822
+[2024-08-14T03:48:22.446+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-14T03:48:22.483+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-14T03:48:22.486+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

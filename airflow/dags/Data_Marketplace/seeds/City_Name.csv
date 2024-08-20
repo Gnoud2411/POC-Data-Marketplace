@@ -1,0 +1,1782 @@
+CITY_CODE,CITY_NAME,PROVINCE_CODE
+0,All Locations in Souya Region,11
+2,Kutsugata,11
+3,Hamatonbetsu,11
+5,Utanobori,11
+1051,Naka-Tonbetsu,11
+1054,Toyoho,11
+1203,Numakawa,11
+1207,Funadomari,11
+1284,Souya Cape,11
+1285,Hama-Onishibetsu,11
+1512,Hon-Domari,11
+1528,Koe-Mon,11
+1546,Rebun,11
+1573,Horonobe,11
+1593,Horodomari,11
+1656,Rebun-Kamiodomari Cape,11
+47401,Wakkanai,11
+47402,Kitami-Ebetsu,11
+0,Souya Region,11
+0,All Locations in Kamikawa Region,12
+6,Bifuka,12
+7,Piyashiri Mountain,12
+8,Nayoro,12
+9,Nishi-Furen,12
+10,Shimo-Kawa,12
+11,Shibetsu,12
+12,Inushi-Betsu Pass,12
+13,Yodaka Peak,12
+14,Horai Mountain,12
+15,Kamikawa,12
+17,Mizuho,12
+18,Shu-Zawa,12
+19,Asahidake,12
+20,Shirogane,12
+21,Furano,12
+22,Mae-Furano Peak,12
+23,Mae-Shigure Mountain,12
+1047,Asahi,12
+1048,Bifuka,12
+1049,Sounkyo Gorge,12
+1052,Biei,12
+1053,Horokanai,12
+1055,Wakkanai,12
+1184,Higashikawa,12
+1185,Shibinai,12
+1188,Ikutora,12
+1189,Tenninkyo,12
+1190,Kami-Furano,12
+1191,E-tanbetsu,12
+1197,Otoineppu,12
+1201,Nakagawa,12
+1279,Shumarinai,12
+1280,Furokuko,12
+1458,Higashi-Kagura,12
+1570,Koguruma,12
+1572,Kenbuchi,12
+1574,Kanayama,12
+47407,Asahikawa,12
+0,Kamikawa Region,12
+0,All Locations in Rumoi Region,13
+24,Teshio,13
+25,Enbetsu,13
+28,Mashike,13
+1112,Kodambe,13
+1213,Yakeshiri,13
+1216,Hatsuyama,13
+1217,Tatsu-B,13
+1218,Horonuka,13
+47404,Haboro,13
+47406,Rumoi,13
+0,Rumoi Region,13
+0,All Locations in Ishikari Region,14
+29,Asoiwa,14
+30,Shin-Shinotsu,14
+31,Yamaguchi,14
+32,Teine Mountain,14
+34,Koganeyu,14
+35,Eniwa-Shimamatsu,14
+36,Shimamatsu Mountain,14
+37,Shikotsu Lake Shore,14
+1076,Nishino-Poro,14
+1085,Ishikari,14
+1193,Hamasaki,14
+1194,Atsuta,14
+1459,Chitose,14
+1507,Ebetsu,14
+47412,Sapporo,14
+0,Ishikari Region,14
+0,All Locations in Sorachi Region,15
+38,Ishikari-Numata,15
+39,Fukagawa,15
+40,Tokiwa Mountain,15
+41,Takikawa,15
+42,Kamoi-Dake,15
+43,Ashibetsu,15
+44,Bibai,15
+46,Shimo-Katsurasawa,15
+47,Naguma,15
+48,Tei-Mi Mountain,15
+49,Yubari,15
+50,Noborikawa Mountain,15
+999,Tsukigata,15
+1068,Kurizawa,15
+1270,Ban-Ikken,15
+1271,Sakura-Yama,15
+1287,Sorachi-Yoshino,15
+1400,Urausu,15
+1401,Kashima,15
+1402,Numa-no-Sawa,15
+1419,Shinjo,15
+1566,Akabira,15
+1567,Uryu,15
+1674,Chichibu-Betsu,15
+47413,Iwamizawa,15
+0,All Points in Oshima Region,16
+51,America,16
+52,Yoichi,16
+54,Kyoho,16
+55,Rankoshi,16
+57,Wakikata Plateau,16
+59,Katsura Plateau,16
+60,Kimobetsu,16
+61,Kurokawa,16
+1072,Makari,16
+1091,Akaiwa,16
+1208,Kamuizumi,16
+1615,Niseko,16
+47411,Otaru,16
+47421,Suttsu,16
+47433,Kutchan,16
+0,Oshima Region,16
+0,Abashiri-Kitami-Mombetsu Region All Points,17
+63,Okoppe,17
+65,Yubetsu,17
+66,Takinoue,17
+67,Kami-Mobetsu,17
+68,Tokoro,17
+69,Engaru,17
+70,Saroma,17
+72,Ikutahara,17
+73,Nikoro Mountain,17
+74,Kitami,17
+75,Koshimizu,17
+76,Shari,17
+77,Rubetsu,17
+78,Rubetsu Mountain,17
+79,Bihoro,17
+80,Mokoto Mountain,17
+81,Chimikeppu Mountain,17
+82,Tsubetsu,17
+83,Kitami Nakayama,17
+981,Utoro,17
+1073,Nishi-Okoppe,17
+1092,Shirataki,17
+1209,Sakaino,17
+1263,Higashimokoto,17
+1420,Maruseppu,17
+1460,Memanbetsu,17
+1487,Mombetsu Komuka,17
+1568,Tsubetsu Futamata,17
+1569,Oketo Tokomoto,17
+1617,Yamaen,17
+47405,Omu,17
+47409,Abashiri,17
+47435,Mombetsu,17
+0,Abashiri-Kitami-Mombetsu Region,17
+0,Nemuro Region All Points,18
+84,Rausu,18
+85,Shibetsu,18
+86,Nakashibetsu,18
+87,Keinebetsu,18
+88,Bekkai,18
+1056,Nosappu,18
+1196,Atsukasa,18
+1266,Itohashibetsu,18
+1489,Nemuro Nakashibetsu,18
+1547,Kami-Shibetsu,18
+47420,Nemuro,18
+0,Nemuro Region,18
+0,Kushiro Region All Points,19
+90,Kawayu,19
+91,Akan Lake Shore,19
+92,Teshikaga,19
+93,Shibecha,19
+94,Pororo Plateau,19
+95,Naka-Tsuru,19
+96,Akan,19
+97,Kiritappu,19
+98,Shiranuka,19
+1107,Futamata,19
+1186,Tsurui,19
+1187,Teshikaga,19
+1192,Ota,19
+1195,Sakaki Town,19
+1283,Chihogaku,19
+1403,Toburo,19
+1417,Chaunihara,19
+1461,Tsurugaoka,19
+47418,Kushiro,19
+0,Kushiro Region,19
+0,Tokachi Region All Points,20
+100,Gunkan Mountain,20
+101,Rikubetsu,20
+102,Shokusan Plateau,20
+103,Nukabira Onsen Village,20
+104,Kosaka Mountain,20
+105,Kami-Ashoro,20
+106,Nishi-Nupkawushi Mountain,20
+107,Kami-Shihoro,20
+108,Poroyasu Mountain,20
+109,Ashoro,20
+110,Sapporo,20
+111,Sankaku Mountain,20
+112,Honbetsu,20
+113,Shintoku,20
+114,Shikaoi,20
+115,Memuro,20
+117,Ikeda,20
+118,Urahoro,20
+119,Obihiro Mountain,20
+120,Hyotan Zawa,20
+121,Taiki,20
+1099,Sangoku Mountain,20
+1204,Komaba,20
+1210,Kami-Futsubetsu,20
+1211,Sarabetsu,20
+1214,Otsu,20
+1286,Nukauchi,20
+1404,Kobetsu,20
+1405,Oshidai,20
+1409,Kashikura,20
+1410,Kami-Rawawan,20
+1418,Ruma,20
+1510,Obihiro Izumi,20
+1571,Mimata,20
+47417,Obihiro,20
+47440,Hiroo,20
+0,Tokachi Region,20
+0,Iburi Region All Points,21
+123,Atsuma,21
+124,Atsuma,21
+125,Hobetsu,21
+126,Mori-no,21
+128,Ooki,21
+129,Usuzan,21
+130,Shiraoi,21
+131,Mukawa,21
+132,Date,21
+133,Noboribetsu Mountain,21
+134,Noboribetsu,21
+1067,Ootaki,21
+1329,Toyako Onsen,21
+1429,Karuros,21
+1496,Toyoura,21
+1498,Hanawa,21
+1499,Abuta,21
+1500,Soubetsu,21
+1501,Irie,21
+1502,Tsukiura,21
+1503,Kitayuzushimaki,21
+1504,Toyako Lake Shore,21
+1665,Atsuma Horinai,21
+47423,Muroran,21
+47424,Tomakomai,21
+0,Iburi Region,21
+0,Hidaka Region All Points,22
+136,Hidaka-Monbetsu,22
+137,Shinwa,22
+138,Numotoru Mountain,22
+139,Sasayama,22
+140,Shizunai,22
+141,Pisenai Mountain,22
+1097,Nisai,22
+1198,Mitsuishi,22
+1202,Hidaka,22
+1264,Poroman,22
+1276,Meguro,22
+1288,Naka-Kitesu,22
+1340,Erimo Cape,22
+1430,Asahi,22
+1594,Bittori,22
+47426,Urakawa,22
+0,Hidaka Region,22
+0,Oshima Region All Points,23
+143,Choumbetsu,23
+144,Yakumo,23
+145,Mori,23
+146,Onuma,23
+147,Kawagumi,23
+148,Hokuto,23
+150,Shiozuru,23
+151,Oyaishi,23
+152,Matsumae,23
+155,Kumaishi,23
+917,Kikkonai,23
+1265,Chisen,23
+1416,Kakegawa,23
+1462,Takamatsu,23
+1543,Toi,23
+1552,Chinai,23
+47430,Hakodate,23
+0,Oshima Region,23
+0,Hiyama Region All Points,24
+153,Setana,24
+154,Imakane,24
+156,Shio,24
+1199,Okushiri,24
+1200,Uzura,24
+1205,Ishizaki,24
+1513,Yoneoka,24
+47428,Esashi,24
+0,Hiyama Region,24
+0,All Points in Aomori Prefecture,31
+158,Shoji Mountain,31
+160,Kanita,31
+162,Nobechi,31
+163,Aji-kawazawa,31
+164,Goshogawara,31
+166,Hirosaki,31
+167,Kuroishi,31
+168,Hakkoda Mountain,31
+169,Misawa,31
+170,Shihei Forest,31
+171,Kenashi Mountain,31
+172,Towada,31
+174,Owani,31
+175,Ikari-kesaki,31
+176,Kudai Mountain,31
+177,Asahi-na-Dake,31
+178,Asahi-na-Dake,31
+179,Mito,31
+1026,Imabetsu,31
+1027,Rokkasho,31
+1041,Oma,31
+1042,Yamato Mountain,31
+1079,Sankayu,31
+1108,Dake,31
+1110,Chokeihei,31
+1119,Ichihara,31
+1122,Oda-no-Sawa,31
+1124,Waki-no-Sawa,31
+1183,Shichinohe,31
+1272,Tora,31
+1406,Onogawa,31
+1495,Aomori Otani,31
+1559,Yunokawa,31
+47574,Fukaura,31
+47575,Aomori,31
+47576,Mutsu,31
+47581,Hachinohe,31
+0,Aomori Prefecture,31
+0,All Points in Akita Prefecture,32
+180,Tashiro Mountain,32
+181,Jinba,32
+182,Sugisawa Mountain,32
+183,Noshiro,32
+184,Takanosu,32
+185,Kazuno,32
+186,Yuse,32
+187,Moriyoshi Mountain,32
+188,Gojome,32
+189,Oga Motoyama,32
+191,Taihei Mountain,32
+192,Iwami-Sannai,32
+193,Kakunodate,32
+194,Tazawako,32
+195,Omagari,32
+196,Honjo,32
+197,Horoha Mountain,32
+198,Yokote,32
+199,Nikaho,32
+200,Yajima,32
+201,Mitsuishi Mountain,32
+202,Yuzawa,32
+203,Ubai-do Mountain,32
+204,Yuno-dai,32
+912,Odate,32
+1035,Ogata,32
+1036,Oga,32
+1043,Hachigata,32
+1050,Taishoji,32
+1109,Higashi-Naruse,32
+1115,Hirate,32
+1117,Higashi-Yuri,32
+1131,Ani,32
+1167,Yoroi-Bata,32
+1273,Fujisato,32
+1278,Hinokino,32
+1289,Hachimantai,32
+1407,Sasako,32
+1408,Fujiwara,32
+1422,Oga-Mayam,32
+1425,Ninbetsu,32
+1463,Wakigami,32
+1511,Oiwa,32
+1652,Tazawako Kogen,32
+47582,Akita,32
+0,Akita Prefecture,32
+0,All Points in Iwate Prefecture,33
+205,Taneichi,33
+206,Karumai,33
+207,Ninohe,33
+208,Orizume Mountain,33
+209,Kuji,33
+210,Nishi-Dake,33
+211,Kutsumaki,33
+212,Sodeyama,33
+213,Chausu Mountain,33
+214,Iwate-Matsuo,33
+215,Iwate Mountain,33
+216,Iwadono,33
+217,Omori Mountain,33
+218,Iwate-Iizumi,33
+219,Koma-Dake,33
+220,Gai-Taka Forest,33
+221,Shizukuishi,33
+224,Yakushi Mountain,33
+225,Kuro-Mori Mountain,33
+226,Toyosawa,33
+227,Hanamaki,33
+228,Ohashi,33
+229,Yuda,33
+230,Kitakami,33
+231,Tono,33
+232,Goyo Mountain,33
+233,Kamaishi,33
+234,Dake Mountain,33
+235,Wakayanagi,33
+236,Esashi,33
+238,Ichinoseki,33
+239,Senma,33
+240,Murone Mountain,33
+1028,Matsuri-Iwate,33
+1032,Koma,33
+1033,Yamada,33
+1037,Ono,33
+1045,Korogawa,33
+1078,Yabu-Kawa,33
+1113,Komei,33
+1118,Sawauchi,33
+1120,Araya,33
+1123,Fudai,33
+1128,Shiwa,33
+1168,Kakkonda,33
+1206,Sumita,33
+1212,Komoto,33
+1215,Oku-Nakayama,33
+1219,Yamagata,33
+1224,Kawai,33
+1225,Monma,33
+1332,Shimo-Ketsuzura,33
+1447,Kukai,33
+1508,Otsuchi,33
+1557,Daito,33
+1558,Kanegasaki,33
+1560,Takizawa,33
+1563,Tsuuma-Ushi,33
+1598,Iwami,33
+1627,Kariya,33
+1628,Shinmachi,33
+1629,Rikuzen-Takata,33
+1653,Ippou-I,33
+47512,Ofunato,33
+47584,Morioka,33
+47585,Miyako,33
+0,Iwate Prefecture,33
+0,All Points in Miyagi Prefecture,34
+241,Kurikomayama,34
+242,Kesennuma,34
+243,Kawata,34
+244,Tsukidate,34
+245,Minowa Mountain,34
+246,Shizugawa,34
+247,Furukawa,34
+248,Ohiwa,34
+249,Kashimadai,34
+251,Shinkawa,34
+252,Takanosu Mountain,34
+254,Kawasaki,34
+255,Fubō,34
+256,Shiroishi,34
+257,Watari,34
+985,Ogamatsu,34
+1029,Yoneyama,34
+1030,Shiogama,34
+1126,Koma-no-Yu,34
+1220,Marumori,34
+1267,Hana-yama,34
+1290,Enoshima,34
+1298,Hippu,34
+1365,Izumi-dake,34
+1464,Natori,34
+1526,Uguisuzawa,34
+1561,Kami,34
+1564,Zao,34
+1597,Kurikoma-Fukuzawa,34
+1600,Kurikoma,34
+1626,Onagawa,34
+1630,Momo,34
+1631,Higashi-Matsushima,34
+1632,Iwate-Numa,34
+47590,Sendai,34
+47592,Ishinomaki,34
+0,Miyagi Prefecture,34
+0,All Points in Yamagata Prefecture,35
+258,Chokai Mountain,35
+260,Sashiba,35
+261,Taihei Mountain,35
+262,Kaneyama,35
+263,Tsuruoka,35
+264,Karikawa,35
+266,Seme,35
+267,Atsumi Dake,35
+268,Kushibiki,35
+269,Gassan,35
+270,Ginzan,35
+271,Tateoka,35
+272,Sazawa,35
+274,Haya Mountain,35
+275,Nagai,35
+276,Zao Mountain,35
+277,Oguni,35
+278,Takamine,35
+279,Yonezawa,35
+280,Nishi-Azuma Mountain,35
+910,Muka-machi,35
+1038,Kami-Kusatsu,35
+1039,Obanazawa,35
+1040,Nezumi-Kesaki,35
+1103,Yamake-Keya,35
+1125,Hiji-Ori,35
+1132,Takabatake,35
+1169,Ochiai,35
+1291,Tobishima,35
+1292,Ooi-zawa,35
+1357,Arakawa,35
+1372,Nakatsugawa,35
+1428,Shirataka Mountain,35
+1465,Hamachikyo,35
+1488,Higashine,35
+1539,Murayama,35
+1562,Kameyama-Naka-yama,35
+1664,Sakata-Ozawa,35
+47520,Shinjo,35
+47587,Sakata,35
+47588,Yamagata,35
+0,All Points in Fukushima Prefecture,36
+281,Yanagawa,36
+282,Inari Pass,36
+283,Azuma Mountain,36
+285,Soma,36
+286,Kitakata,36
+287,Yagisawa,36
+288,Harai-machi,36
+289,Iidani Mountain,36
+290,Inawashiro,36
+291,Nihonmatsu,36
+292,Hakuba Stone Mountain,36
+294,Funahiki,36
+295,Namie,36
+296,Asakusadake,36
+297,Tadami,36
+298,Hakase Pass,36
+299,Koriyama,36
+300,Tomioka,36
+301,Nango,36
+302,Komadome Pass,36
+303,Tajima,36
+304,Ono Shin-machi,36
+305,Kannon Mountain,36
+307,Ishikawa,36
+308,Sanno Pass,36
+309,Oozuru Mountain,36
+310,Hira,36
+311,Tashiro Mountain,36
+312,Higashi-Shirakawa,36
+1031,Nishi-Aizu,36
+1034,Hirono,36
+1044,Kaneyama,36
+1116,Washigura,36
+1127,Kamo-Tono,36
+1129,Kawauchi,36
+1130,Iitate,36
+1150,Tsushima,36
+1268,Naguma,36
+1269,Tateiwa,36
+1274,Kawamae,36
+1282,Hibara,36
+1293,Moniwa,36
+1294,Yumoto,36
+1295,Hinoe,36
+1359,Yoshio Pass,36
+1364,Rokujuri-goe,36
+1386,Konan,36
+1466,Tamagawa,36
+1607,Yamada,36
+1633,Shinchi,36
+1634,Furudono,36
+47570,Wakamatsu,36
+47595,Fukushima,36
+47597,Shirakawa,36
+47598,Onahama,36
+0,Fukushima Prefecture,36
+0,All Points in Ibaraki Prefecture,40
+314,Hanazono,40
+315,Kita-Ibaraki,40
+316,Daigo,40
+317,Shinmine Mountain,40
+318,Kasama,40
+320,Furukawa,40
+321,Atago Mountain,40
+322,Shimotsuma,40
+323,Bandō,40
+324,Tsuchiura,40
+325,Kashima,40
+911,Edosaki,40
+1011,Hitachi,40
+1012,Kakioka,40
+1013,Minori,40
+1014,Ryugasaki,40
+1082,Tsukuba Mountain,40
+1170,Nakano,40
+1173,Tokuda,40
+1245,Hokota,40
+1331,Hitachi-Omiya,40
+1388,Kadoni,40
+1421,Daino,40
+1530,Shimodate,40
+1635,Takahagi,40
+1661,Joso,40
+47629,Mito,40
+47646,Tsukuba (Tanno),40
+0,Ibaraki Prefecture,40
+0,All Points in Tochigi Prefecture,41
+326,Nasu Highland,41
+327,Kurodahara,41
+328,Happouga-hara,41
+329,Kuroiso,41
+330,Hachiko Mountain,41
+331,Ohtawara,41
+333,Hōsaka Mountain,41
+334,Takanesawa,41
+335,Kanuma,41
+337,Kazuso,41
+338,Moka,41
+339,Ashikaga,41
+340,Tochigi,41
+341,Oyama,41
+1015,Ishiiri,41
+1016,Ashio,41
+1017,Karasuyama,41
+1018,Sano,41
+1221,Torobe,41
+1333,Imamiya,41
+1334,Shioya,41
+1605,Nasu-Karasuyama,41
+1675,Nikko-Higashi-machi,41
+47615,Utsunomiya,41
+47690,Oku-Nikko (Nikko),41
+0,Tochigi Prefecture,41
+0,All Points in Gunma Prefecture,42
+342,Maebashi,42
+343,Kusatsu,42
+344,Nozawa Lake,42
+345,Amami Mountain,42
+346,Numata,42
+347,Akagi Mountain,42
+348,Tashiro,42
+349,Haruna Mountain,42
+351,Kiryu,42
+352,Ichi-no-Ji Mountain,42
+353,Kamisato,42
+354,Nishinomaki,42
+355,Fujioka,42
+356,Tatebayashi,42
+357,Inagumi Mountain,42
+1019,Minakami,42
+1020,Nakanojo,42
+1021,Isesaki,42
+1174,Katashina,42
+1222,Fujiwara,42
+1223,Kanra,42
+1259,Kurohone,42
+1375,Takamine Mountain,42
+47624,Maebashi,42
+0,Gunma Prefecture,42
+0,All Points in Saitama Prefecture,43
+359,Kuki,43
+361,Do-hira,43
+362,Hanno,43
+363,Saitama,43
+364,Koshigaya,43
+1000,Mitsumine,43
+1009,Yorii,43
+1069,Kounosu,43
+1070,Tokorozawa,43
+1159,Urayama,43
+1182,Kami-Yoshida,43
+1232,Hatoyama,43
+1497,Tokigawa,43
+47626,Kumagaya,43
+47641,Chichibu,43
+0,Saitama Prefecture,43
+0,All Points in Tokyo Prefecture,44
+365,Ogouchi,44
+366,Hachioji,44
+367,Chofu,44
+368,Setagaya,44
+370,Edogawa-Rinkai,44
+371,Haneda,44
+1001,Oume,44
+1002,Nerima,44
+1133,Fuchu,44
+1134,Niijima,44
+1180,Ozawa,44
+1467,Oshima-Kitano-yama,44
+1468,Yaemigahara,44
+1505,Kozushima,44
+1506,Miyake-Tsubota,44
+1509,Miyakejima-Ako,44
+1522,Niijima,44
+1523,Kozushima,44
+1525,Miyake-Izu,44
+1595,Haha-jima,44
+1642,Oshima-Rinji,44
+1643,Oshima-Izumi,44
+1644,Oshima-Sakigi,44
+1646,Toshima,44
+1648,Aogashima,44
+47662,Tokyo,44
+47675,Oshima,44
+47677,Miyakejima,44
+47678,Hachijojima,44
+47971,Chichijima,44
+47991,Minami-Torishima,44
+0,Tokyo Prefecture,44
+0,All Points in Chiba Prefecture,45
+375,Katori,45
+376,Abiko,45
+377,Toshou,45
+378,Narita,45
+381,Mobara,45
+382,Kisarazu,45
+383,Kyonan,45
+384,Kamo-gawa,45
+916,Sakura,45
+1003,Yokoshiba-Hikari,45
+1004,Ootaki,45
+1236,Funabashi,45
+1238,Ushiku,45
+1241,Sakahata,45
+47648,Choshi,45
+47672,Tateyama,45
+47674,Katsuura,45
+47682,Chiba,45
+0,Chiba Prefecture,45
+0,All Points in Kanagawa Prefecture,46
+387,Sagamiko,46
+388,Ebina,46
+390,Hakone,46
+391,Enoshima,46
+392,Miura,46
+1005,Sagamihara Chuo,46
+1006,Hiyoshi,46
+1007,Hiratsuka,46
+1008,Odawara,46
+1096,Tanzawa Lake,46
+1443,Tsujido,46
+47670,Yokohama,46
+0,Kanagawa Prefecture,46
+0,All Points in Nagano Prefecture,48
+393,Nozawa Onsen,48
+394,Shinano-machi,48
+395,Iiyama,48
+396,Hakuba,48
+398,Kasakake,48
+399,Omachi,48
+400,Shinshu Shin-machi,48
+401,Atera-yama,48
+402,Ueda,48
+403,Tsubakuro,48
+404,Hotaka,48
+407,Kakeyu,48
+408,Saku,48
+409,Takabotchi,48
+410,Morai-yama,48
+412,Yatsugatake,48
+413,Kiso Hirasawa,48
+414,Hara,48
+415,Nobeyama,48
+416,Ontake,48
+417,Kiso Fukushima,48
+418,Takatou,48
+419,Inukura,48
+420,Miyata Highland,48
+421,Matsumine,48
+422,Suwa,48
+423,Surukogi-yama,48
+424,Iijima,48
+425,Sasayama,48
+427,Enasan,48
+428,Uguisu,48
+992,Sugadaira,48
+993,Higashiomi,48
+994,Kamigochi,48
+1022,Minami-Kiso,48
+1090,Minami-Kotani,48
+1162,Onigami,48
+1300,Tachikawa,48
+1312,Nagawa,48
+1314,Kaida Highland,48
+1317,Namiai,48
+1319,Tatsuno,48
+1323,Minami-Shinano,48
+1339,Anan,48
+1360,Sei-kougen,48
+1392,Amegake-yama,48
+1394,Ooshi,48
+1397,Sugishima,48
+1399,Jukko-toge,48
+1411,Kotani,48
+1445,Ina,48
+1529,Matsumoto Imai,48
+1549,Kita-Aiki,48
+1550,Shirakaba Lake,48
+1551,Takato,48
+1591,Miyata,48
+1659,Otakidaimota,48
+1666,Kiso Yabu-hara,48
+47610,Nagano,48
+47618,Matsumoto,48
+47620,Suwa,48
+47622,Karuisawa,48
+47637,Iida,48
+0,Nagano Prefecture,48
+0,All Points in Yamanashi Prefecture,49
+429,Ken-no-mine,49
+430,Hinata-yama,49
+431,Oobasawa,49
+433,Katsunuma,49
+434,Otsuki,49
+435,Haccho-yama,49
+436,Furuseki,49
+438,Yamanaka,49
+439,Nanbu,49
+1023,Oizumi,49
+1024,Nirasaki,49
+1165,Uenohara,49
+1234,Kiriyama,49
+1599,Otome Lake,49
+1640,Fujikawa,49
+47638,Kofu,49
+47639,Mount Fuji,49
+47640,Kawaguchi Lake,49
+0,Yamanashi Prefecture,49
+0,All Points in Shizuoka Prefecture,50
+440,Shiraito,50
+441,Gotemba,50
+442,Fuji,50
+444,Koshikawa,50
+445,Kawanehoncho,50
+446,Ooyama,50
+448,Takane-yama,50
+450,Kiri-yama,50
+451,Tenryu,50
+452,Shimoda,50
+453,Yugashima,50
+454,Amagi-yama,50
+456,Matsuzaki,50
+457,Inatori,50
+986,Sakuma,50
+987,Toi,50
+988,Mikkabi,50
+989,Kakegawa,50
+1105,Kuma,50
+1106,Mikura,50
+1114,Ume-yama,50
+1243,Shimizu,50
+1244,Iwata,50
+1335,Kikukawa Mokinokohara,50
+1338,Igawa,50
+1393,Mikura,50
+1440,Kagihara,50
+1601,Shizuoka Airport,50
+1662,Haruno,50
+1668,Uto-gi,50
+1673,Atami Izu-yama,50
+47639,Mount Fuji,50
+47654,Hamamatsu,50
+47655,Omaezaki,50
+47656,Shizuoka,50
+47657,Mishima,50
+47666,Irozaki,50
+47668,Ajiro,50
+0,Shizuoka Prefecture,50
+0,All Points in Aichi Prefecture,51
+460,Ichinomiya,51
+461,Toyoyama,51
+462,Chausuyama,51
+464,Toyota,51
+465,Tokai,51
+466,Dekiyama,51
+467,Okazaki,51
+468,Sakutei,51
+469,Isshiki,51
+470,Toyohashi,51
+472,Tahara,51
+982,Inabu,51
+983,Kanie,51
+984,Minami-Chita,51
+1166,Obara,51
+1341,Hourai,51
+1344,Gamagori,51
+1346,Aisai,51
+1541,Shinshiro,51
+1555,Centrair,51
+1576,Azou,51
+1638,Oobu,51
+47636,Nagoya,51
+47653,Irako,51
+0,Aichi Prefecture,51
+0,All Points in Gifu Prefecture,52
+473,Kamioka,52
+474,Nagori-yama,52
+475,Mori-shige,52
+477,Norikura-dake,52
+478,Dainichi-dake,52
+479,Shinbouchi,52
+480,Funa-yama,52
+481,Shirai-yama,52
+482,Shiratori,52
+483,Hagiwara,52
+484,Kabuyama,52
+485,Hachiman,52
+486,Taru-mie,52
+487,Kanayama,52
+488,Sankai-yama,52
+489,Gongen-yama,52
+490,Kannon,52
+491,Mino-Kamo,52
+492,Kara-ishi Toge,52
+493,Ena,52
+494,Nakatsugawa,52
+495,Sekigahara,52
+496,Oogaki,52
+498,Mitsu-mori-yama,52
+1057,Mino,52
+1058,Tajimi,52
+1059,Kamiishi,52
+1061,Tachio,52
+1066,Miyaji,52
+1153,Hirai,52
+1299,Nagase,52
+1301,Ibi-gawa,52
+1305,Rokumae,52
+1306,Shirakawa,52
+1308,Kawai,52
+1311,Miyamae,52
+1313,Kurokawa,52
+1363,Dainichi,52
+1384,Fuki,52
+1387,Omote,52
+1390,Otsu,52
+1396,Juuni-dake,52
+1436,Hirugano,52
+1437,Kiyomi,52
+1438,Niu-kawa,52
+1577,Sekishi Itadori,52
+47617,Takayama,52
+47632,Gifu,52
+0,Gifu Prefecture,52
+0,All Points in Mie Prefecture,53
+499,Kita-sei,53
+500,Kuwana,53
+501,Kira-mine,53
+503,Kameyama,53
+505,Kasatori-yama,53
+507,Nabari,53
+508,Kunimi-yama,53
+509,Omatta,53
+510,Kayami,53
+511,Fujisaka Toge,53
+513,Hachiman Toge,53
+514,Kumano,53
+918,Oodai,53
+990,Matsusaka,53
+991,Iso,53
+1230,Toba,53
+1255,Miyagawa,53
+1258,Minami-Ise,53
+1349,Kii-nagashima,53
+1356,Hakusan,53
+1381,Ago,53
+1423,Omiwa,53
+1532,Kumano Shinka,53
+47649,Ueno,53
+47651,Tsu,53
+47663,Owase,53
+47684,Yokkaichi,53
+0,Mie Prefecture,53
+0,All Points in Niigata Prefecture,54
+515,Murakami,54
+516,Washika,54
+518,Ryotsu,54
+520,Nioji-dake,54
+521,Niitsu,54
+522,Maki,54
+523,Houshu-yama,54
+524,Teradomari,54
+525,Sanjo,54
+526,Muramatsu,54
+527,Tsugawa,54
+528,Awagatake,54
+529,Nagaoka,54
+530,Tachio,54
+531,Morimon-dake,54
+532,Kashiwazaki,54
+533,Sakura-zaka Toge,54
+534,Koide,54
+536,Yasuzuka,54
+537,Toka-machi,54
+538,Eda Toge,54
+539,Itoigawa,54
+540,Nohara,54
+541,Hikari-yama,54
+542,Oosawa Toge,54
+543,Tsunami,54
+544,Yuzawa,54
+545,Hakama,54
+995,Awashima,54
+996,Hagumo,54
+997,Morimon,54
+998,Seki-yama,54
+1060,Shimotsuke,54
+1102,Kake,54
+1111,Akaya,54
+1154,Oguni,54
+1155,Matsushiro,54
+1256,Takane,54
+1297,Hiraiwa,54
+1302,Ogata,54
+1315,Hizaki,54
+1318,Nakajo,54
+1369,Sanmen,54
+1370,Ooyu,54
+1395,Shiozawa,54
+1398,Miyayori-kami,54
+1424,Tarumoto,54
+1426,Kawadani,54
+1427,Tsutsukawa,54
+1444,Murotani,54
+1469,Matsuhama,54
+1514,Aki-chi,54
+1645,Hyoko,54
+47602,Aikawa,54
+47604,Niigata,54
+47612,Takada,54
+0,Toyama Prefecture All Locations,55
+546,Asahi,55
+547,Uozu,55
+548,Unazuki,55
+549,Kareizawa,55
+552,Toya,55
+553,Kamiichi,55
+554,Nanto Takamiya,55
+555,Yao,55
+556,Otani,55
+557,Tateyama,55
+558,Hosoo Pass,55
+559,Taniori,55
+1309,Himi,55
+1412,Unazuki,55
+1413,Taira,55
+1414,Oyama,55
+1415,Hosoi,55
+1455,Inotani,55
+1533,Akigashima,55
+1553,Gokayama,55
+1621,Tateyama Ashikura,55
+47606,Fushiki,55
+47607,Toyama,55
+0,Ishikawa Prefecture All Locations,56
+560,Suzu,56
+562,Monzen,56
+563,Kihara Peak,56
+564,Shiga,56
+565,Nanao,56
+566,Hakui,56
+567,Kahoku,56
+568,Hodatsu Mountain,56
+570,Ioh Mountain,56
+571,Kaga Nakatsuhara,56
+973,Hakusan Kawachi,56
+1171,Hakusan Shiramine,56
+1324,Komatsu,56
+1486,Anamizu,56
+1544,Mitsui,56
+1545,Hodatsu Shimizu,56
+1650,Teshima,56
+47600,Wajima,56
+47605,Kanazawa,56
+0,Fukui Prefecture All Locations,57
+573,Ono,57
+574,Taira Mountain,57
+575,Kasugano,57
+576,Itagaki,57
+577,Imasho,57
+579,Oshima,57
+974,Miyama,57
+975,Kawakami,57
+1010,Mihama,57
+1071,Mikuni,57
+1226,Katsuyama,57
+1316,Koshi,57
+1382,Kuzuryu,57
+1454,Ooi,57
+1537,Harue,57
+1565,Takefu,57
+47616,Fukui,57
+47631,Tsuruga,57
+0,Shiga Prefecture All Locations,60
+580,Imazu,60
+581,Arakawa,60
+582,Harusato,60
+584,Omi Hachiman,60
+585,Kimi Keibataichi,60
+586,Otsu,60
+587,Tsuchiyama,60
+963,Higashiomi,60
+964,Shigaraki,60
+976,Nagahama,60
+1083,Minami Komatsu,60
+1087,Yanagase,60
+1361,Shimogahara,60
+1524,Yonehara,60
+1578,Kutsuki Hirai,60
+47751,Ibuki Mountain,60
+47761,Hikone,60
+0,Kyoto Prefecture All Locations,61
+588,Mineyama,61
+589,Miyazu,61
+591,Hotaka,61
+592,Asahara Mountain,61
+593,Fukuchiyama,61
+594,Goma,61
+595,Myoko Mountain,61
+596,Sonobe,61
+598,Kyotanabe,61
+599,Washimine Mountain,61
+920,Hanae Pass,61
+927,Chii,61
+928,Kyohoku,61
+965,Maeda,61
+966,Honjo,61
+1025,Nagaokakyo,61
+1160,Mutsuki,61
+1303,Miyama,61
+1378,Suzhi,61
+1379,Mitsuse,61
+1380,Ayabe,61
+1383,Sanwa,61
+1641,Sakaura,61
+1671,Ayabe Yamaka,61
+47750,Maizuru,61
+47759,Kyoto,61
+0,Osaka Prefecture All Locations,62
+600,Nose,62
+601,Minoo,62
+602,Toyonaka,62
+604,Ikoma Mountain,62
+605,Kawachinagano,62
+606,Kumatori,62
+1062,Sakai,62
+1065,Hirakata,62
+1470,Yao,62
+1471,Kansai Airport Island,62
+1602,Ibaraki,62
+47772,Osaka,62
+0,Hyogo Prefecture All Locations,63
+607,Kasumi,63
+608,Onsen,63
+609,Mikawa Mountain,63
+611,Yoka,63
+612,Wadayama,63
+613,Ikuno,63
+614,Kashiwara,63
+615,Ichinomiya,63
+616,Kasakake Mountain,63
+617,Sayo,63
+618,Koshino,63
+619,Kami,63
+620,Matoba Mountain,63
+622,Nishio,63
+623,Rokko Mountain,63
+624,Ie Island,63
+625,Akashi,63
+628,Fukura,63
+956,Nishiwaki,63
+967,Oya,63
+968,Fukusaki,63
+969,Sanda,63
+970,Kokorogaya,63
+977,Usawa Plateau,63
+1227,Miki,63
+1337,Minami-Awaji,63
+1448,Awaji Town,63
+1449,Ashiya,63
+1450,Kobe Shioya,63
+1587,Kobe Airport,63
+1588,Nishinomiya,63
+47747,Toyooka,63
+47769,Himeji,63
+47770,Kobe,63
+47776,Sumoto,63
+0,Nara Prefecture All Locations,64
+630,Hari,64
+631,Tawaramoto,64
+632,Son,64
+633,Ouda,64
+634,Takami Mountain,64
+635,Gojo,64
+636,Atsuji,64
+637,Yamabujiyama,64
+638,Kojindake,64
+639,Hinode Mountain,64
+640,Uenoji,64
+641,Tamaki Mountain,64
+957,Kamikita,64
+1228,Kaze,64
+1366,Takami,64
+1376,Katsuragi,64
+1377,Tsubosaka,64
+1439,Yoshino,64
+1619,Tenkawa,64
+1649,Shimokitayama,64
+1669,Katsurawa,64
+47780,Nara,64
+0,Wakayama Prefecture All Locations,65
+642,Katsuragi Mountain,65
+644,Iwade,65
+645,Koya Mountain,65
+646,Gomadan Mountain,65
+647,Gobo,65
+648,Tora Ga Mine Pass,65
+649,Shingu,65
+650,Shirahama,65
+651,Hikigawa,65
+971,Kurisu River,65
+978,Yuasa,65
+1063,Shimizu,65
+1074,Mongu,65
+1089,Ryujin,65
+1172,Iro,65
+1342,Katsuragi,65
+1347,Nishikawa,65
+1457,Tomo Island,65
+1485,Kawabe,65
+1589,Nanki Shirahama,65
+47777,Wakayama,65
+47778,Shio Misaki,65
+0,Okayama Prefecture All Locations,66
+653,Ozuka Mountain,66
+654,Naki Mountain,66
+655,Imaoka,66
+656,Kuze,66
+658,Niimi,66
+659,Tenko Mountain,66
+660,Akaiwa,66
+661,Jinyama,66
+662,Taihei Mountain,66
+663,Fukuwata,66
+664,Wake,66
+665,Soya,66
+666,Yakake,66
+668,Mushiaki,66
+669,Kurashiki,66
+670,Tamano,66
+919,Kasaoka,66
+929,Shimo-yabe,66
+930,Takahashi,66
+1140,Nagi,66
+1328,Kamichida,66
+1330,Senya,66
+1371,Onbara,66
+1531,Nichoji Temple,66
+1584,Tomi,66
+1585,Kibi Chuo,66
+1618,Asahi West,66
+47756,Tsuyama,66
+47768,Okayama,66
+0,Hiroshima Prefecture All Locations,67
+671,Dogo Mountain,67
+672,Yasuda Mountain,67
+673,Inubushi Mountain,67
+674,Miyoshi,67
+675,Shobara,67
+676,Oasa,67
+677,Kake,67
+678,Kaiji Mountain,67
+679,Joge,67
+680,Uchikuro Mountain,67
+681,Sera,67
+682,Keshimotani Mountain,67
+683,Higashi Hiroshima,67
+686,Takehara,67
+687,Ikuchi Island,67
+688,Otake,67
+690,Kurahashi,67
+947,Takano,67
+948,Higashijo,67
+949,Koda,67
+950,Mii,67
+951,Fuchu,67
+952,Kawachi,67
+953,Kubi,67
+1163,Shiwa,67
+1257,Wohaku,67
+1262,Yahata,67
+1325,Abura,67
+1326,Hatsukaichi Tsuda,67
+1472,Hongo,67
+1575,Saeki Yuki,67
+1579,Toshi,67
+1582,Kimata,67
+1583,Midorino,67
+1603,Yasuda,67
+1606,Kure City Kamaki,67
+47765,Hiroshima,67
+47766,Kure,67
+47767,Fukuyama,67
+0,Shimane Prefecture All Locations,68
+692,Nishinoshima,68
+693,Kashima,68
+694,Hikawa,68
+696,Daito,68
+697,Oda,68
+698,Kakei,68
+699,Yokota,68
+700,Azuma Mountain,68
+701,Kawamoto,68
+703,Misumi,68
+704,Masuda,68
+705,Seizan,68
+706,Tokusumi,68
+707,Tsuwano,68
+954,Sada,68
+1093,Sakurae,68
+1094,Mizuho,68
+1095,Hakuta,68
+1175,Hasa,68
+1176,Hikimi,68
+1307,Ami,68
+1310,Izumo,68
+1320,Akina,68
+1321,Yae,68
+1322,Mutsuki,68
+1336,Fukumitsu,68
+1362,Hara,68
+1473,Saigo Cape,68
+1474,Kozu,68
+1592,Yoshiga,68
+47740,Saigo,68
+47741,Matsue,68
+47755,Hamada,68
+0,Tottori Prefecture All Locations,69
+709,Aotani,69
+711,Iwai,69
+713,Kurayoshi,69
+714,Sukatawara,69
+715,Reisekisan,69
+716,Daisen,69
+717,Koto,69
+718,Chizu,69
+938,Hinata,69
+1177,Sekin,69
+1178,Wakasa,69
+1231,Shiozu,69
+1304,Chaya,69
+1385,Saji,69
+1389,Eo,69
+1391,Kano,69
+1519,Koyama,69
+47742,Sakai,69
+47744,Yonago,69
+47746,Tottori,69
+0,All Locations in Tokushima Prefecture,71
+719,Oyamadera,71
+720,Ikeda,71
+722,Edoyama,71
+723,Tairokuji Mountain,71
+724,Hiyoshi,71
+725,Shishiku,71
+972,Anabuki,71
+1098,Fukuhara Asahi,71
+1242,Gamouda,71
+1252,Kyōkami,71
+1327,Handa,71
+1352,Kitō,71
+1358,Asahi-maru,71
+1604,Kaiyo,71
+47894,Tsurugi Mountain,71
+47895,Tokushima,71
+0,Tokushima Prefecture,71
+0,All Locations in Kagawa Prefecture,72
+726,Utsumi,72
+729,Takimiya,72
+730,Hikida,72
+731,Ryuo Mountain,72
+1239,Zaida,72
+1475,Kōnan,72
+47890,Tadotsu,72
+47891,Takamatsu,72
+0,Kagawa Prefecture,72
+0,All Locations in Ehime Prefecture,73
+732,Oomishima,73
+733,Tamagawa,73
+734,Niihama,73
+735,Shikokuchuo,73
+737,Kambayashi,73
+738,Jōju Shrine,73
+739,Nagahama,73
+740,Nakayama,73
+741,Kuma,73
+742,Shishigoshi Pass,73
+743,Yawatahama,73
+745,Misato,73
+958,Saijō,73
+959,Ōzu,73
+960,Misaki,73
+961,Uwa,73
+1077,Imabari,73
+1260,Fukami,73
+1350,Chikanaga,73
+1456,Seto,73
+1521,Matsuyama Minami Yoshida,73
+47887,Matsuyama,73
+47892,Uwajima,73
+0,Ehime Prefecture,73
+0,All Locations in Kochi Prefecture,74
+746,Motoyama,74
+747,Shigeo,74
+748,Sagawa,74
+749,Naruyama,74
+751,Nangoku,74
+752,Geisei,74
+753,Toriga Mountain,74
+754,Funado,74
+755,Aki,74
+756,Susaki,74
+757,Sakihama,74
+758,Kubokawa,74
+760,Dōgama,74
+761,Taishō,74
+763,Nakamura,74
+921,Yusuhara,74
+955,Tano,74
+1179,Ikegawa,74
+1229,Otochi,74
+1233,Saga,74
+1235,Egawazaki,74
+1249,Kōmen,74
+1281,Uoyase,74
+1351,Honkawa,74
+1476,Nangoku Nisshō,74
+1556,Misaki,74
+47893,Kochi,74
+47897,Sukumo,74
+47898,Shimizu,74
+47899,Muroto Cape,74
+0,Kochi Prefecture,74
+0,All Locations in Yamaguchi Prefecture,81
+765,Susa,81
+767,Tokusa,81
+768,Nabetei Pass,81
+769,Akiyoshidai,81
+770,Setohara,81
+771,Hirose,81
+772,Toyota,81
+773,Sakurayama,81
+775,Hōfu,81
+776,Shimonoseki,81
+778,Ube,81
+779,Ange,81
+913,Kuga,81
+939,Aburaya,81
+940,Iwakuni,81
+941,Shūtō,81
+942,Yanai,81
+1100,Rakan Mountain,81
+1101,Nagano Mountain,81
+1261,Wada,81
+1367,Shino,81
+1614,Kano,81
+1620,Higashi Atsuho,81
+47754,Hagi,81
+47762,Shimonoseki,81
+47784,Yamaguchi,81
+0,Yamaguchi Prefecture,81
+0,All Locations in Fukuoka Prefecture,82
+780,Yahata,82
+781,Kokura,82
+782,Yukuhashi,82
+783,Sasaguri,82
+785,Maebaru,82
+787,Kyusenbu Mountain,82
+788,Asakura,82
+789,Hiko Mountain,82
+790,Kurume,82
+791,Miminashi Mountain,82
+792,Kuroki,82
+793,Omuta,82
+943,Munakata,82
+944,Chōkichi,82
+945,Yanagawa,82
+1046,Sōda,82
+1141,Dazaifu,82
+1477,Hakata,82
+1527,Sone,82
+1590,Kūkō Kita-machi,82
+1611,Sawara Waki-yama,82
+1637,Higashitani,82
+1657,Koroshima,82
+47807,Fukuoka,82
+47809,Iizuka,82
+0,Fukuoka Prefecture,82
+0,All Locations in Oita Prefecture,83
+794,Nakatsu,83
+795,Bungotakata,83
+796,Musashi,83
+797,Fushiki,83
+799,Yufuin,83
+801,Sagaseki,83
+802,Shaka Mountain,83
+803,Yuhira,83
+804,Onmi,83
+805,Inukai,83
+806,Takeda,83
+807,Dewa,83
+808,Saiki,83
+809,Kuraki,83
+810,Kamae,83
+931,Innai,83
+932,Kusu,83
+933,Usuki,83
+979,Yamakake,83
+1137,Kunimi,83
+1142,Ume,83
+1157,Beppu,83
+1237,Kitsuki,83
+1554,Tsubaki,83
+47814,Hita,83
+47815,Oita,83
+0,Oita Prefecture,83
+0,All Locations in Nagasaki Prefecture,84
+811,Sasuna,84
+814,Matsuura,84
+815,Kunimi Mountain,84
+817,Oseto,84
+818,Nagaura Mountain,84
+819,Gokaharadake,84
+820,Isahaya,84
+922,Kuchinotsu,84
+962,Shimabara,84
+1080,Arikawa,84
+1084,Omura,84
+1138,Arikawa,84
+1144,Ashibe,84
+1441,Nomozaki,84
+1442,Fukae,84
+1446,Fugen Mountain,84
+1451,Hyakkadai,84
+1452,Chijiwa,84
+1453,Waniura,84
+1478,Ishida,84
+1479,Kamiōtsu,84
+1535,Otsuga,84
+1536,Kashima Island,84
+1538,Mitsushima,84
+1670,Waki-misaki,84
+1672,Nishi-kai,84
+1676,Kinu-gasa Mountain,84
+47800,Ishihara,84
+47805,Hirado,84
+47812,Sasebo,84
+47817,Nagasaki,84
+47818,Unzen Mountain,84
+47843,Fukue,84
+0,Nagasaki Prefecture,84
+0,All Locations in Saga Prefecture,85
+824,Egamiki,85
+825,Watada,85
+826,Gongen Mountain,85
+827,Yahata Mountain,85
+829,Shiraishi,85
+830,Ureshino,85
+831,Tara Mountain,85
+1075,Imari,85
+1480,Kawasoe,85
+1610,Karatsu,85
+1612,Tosu,85
+1616,Kitayama,85
+1667,O-machi,85
+47813,Saga,85
+0,Saga Prefecture,85
+0,All Locations in Kumamoto Prefecture,86
+832,Kikuchi,86
+833,Minamioguni,86
+834,Taimei,86
+835,Kikuchi,86
+836,Kuradake,86
+838,Tawarayama,86
+840,Takamori,86
+841,Ma no Tani-yama,86
+842,Kōsa,86
+843,Matsushima,86
+844,Ōkinoumi,86
+845,Hondo,86
+846,Yatsushiro,86
+847,Ikeda,86
+850,Ichiri-yama,86
+851,Shiraga-dake,86
+923,Mashiki,86
+924,Minamata,86
+925,Taragi,86
+926,Kami,86
+946,Tauru,86
+1081,Mikado,86
+1086,Yumemae Yokotani,86
+1088,Chausu-toge,86
+1156,Yakata-yama,86
+1158,Gokasou,86
+1240,Aso Otome,86
+1368,Itsuki,86
+1435,Yamae,86
+1580,Uto,86
+1581,Ikkenchi,86
+1613,Yamato,86
+1660,Minami-Aso,86
+47819,Kumamoto,86
+47821,Aso Mountain,86
+47824,Hitoyoshi,86
+47838,Ushibuka,86
+0,Kumamoto Prefecture,86
+0,All Locations in Miyazaki Prefecture,87
+852,Takaharu,87
+853,Ōnakao,87
+854,Nakagoya,87
+856,Inohara,87
+857,Hyuga,87
+858,Yabitsu-dake,87
+859,Takanabe,87
+860,Kakuto,87
+861,Nishito,87
+862,Ebino Kogen,87
+863,Kobayashi,87
+864,Nojiri,87
+865,Kunimoto,87
+867,Kirishima Miike,87
+868,Aoshima,87
+870,Wani-tsuka-yama,87
+872,Kushima,87
+1135,Furue,87
+1164,Fukase,87
+1275,Mitatsu,87
+1343,Morotsuka,87
+1345,Nishime,87
+1348,Kuraoka,87
+1353,Kamikado,87
+1432,Kitakata,87
+1433,Kamishiiwa,87
+1481,Akaiwa,87
+1608,Tsunokawa,87
+1609,Hinokage,87
+1623,Takahara,87
+1624,Yamada,87
+1636,Shiiba,87
+1663,Tano,87
+47822,Nobeoka,87
+47829,Miyakonojo,87
+47830,Miyazaki,87
+47835,Aburatsu,87
+0,Miyazaki Prefecture,87
+0,All Locations in Kagoshima Prefecture,88
+874,Furuhara,88
+875,Oguchi,88
+876,Uo-no-ko,88
+877,Shiboi-yama,88
+878,Satsuma Kashihara,88
+879,Naka-koshiki,88
+880,Kawauchi,88
+881,Mizobe,88
+882,Yaeyama,88
+883,Higashi Ichiki,88
+884,Gongen-ga-oi,88
+886,Takato,88
+887,Kaseta,88
+888,Yoshika Beppu,88
+890,Kiire,88
+891,Kimozuka-gawa,88
+893,Ibusuki,88
+894,Hōyoshi-dake,88
+895,Uchinoura,88
+897,Naka-tane,88
+898,Kamimachi,88
+899,Ono-ma,88
+934,Izumi,88
+935,Makinohara,88
+936,Shibushi,88
+937,Kanoya,88
+980,Koniya,88
+1104,Yamato-dake,88
+1136,Tashiro,88
+1139,Ise,88
+1146,Teru,88
+1149,Osumi,88
+1161,Sata,88
+1181,Kimozuka Maeda,88
+1277,Yoron Island,88
+1296,Kikaijima,88
+1520,Kasari,88
+1540,Nakano-shima,88
+1542,Amagi,88
+1625,Kirishima Boku-en,88
+1647,Takarajima,88
+1654,Suwanose-jima,88
+1655,Kohara-jima,88
+1658,Hira-shima,88
+47823,Akune,88
+47827,Kagoshima,88
+47831,Makurazaki,88
+47836,Yakushima,88
+47837,Tanegashima,88
+47909,Naze,88
+47942,Okinoerabu,88
+0,Kagoshima Prefecture,88
+0,All Locations in Okinawa Prefecture,91
+901,Oku,91
+902,Yonaha-dake,91
+903,Kurega-yama,91
+905,Nakama,91
+906,Yomitan,91
+907,Kokusaidori,91
+909,Itokazu,91
+1064,Kin,91
+1145,Iharama,91
+1147,Isejima,91
+1152,Takeshima,91
+1246,Iriomote,91
+1247,Tarama,91
+1248,Jōhen,91
+1250,Kawabira,91
+1251,Ōhara,91
+1354,Hateruma,91
+1373,Motobu,91
+1374,Higashi,91
+1482,Atsumine,91
+1483,Kagami-hara,91
+1484,Maeri,91
+1490,Shimoji-jima,91
+1491,Nakasu,91
+1493,Tokoro,91
+1494,Shida-hara,91
+1515,Awamori,91
+1516,Kerama,91
+1517,Kita-Daito,91
+1518,Kyūhigashi,91
+1534,Kitahara,91
+1586,Kunigami,91
+1596,Miyagi-jima,91
+1639,Mori-yama,91
+1651,Tōnaki,91
+47912,Yonaguni-jima,91
+47917,Iriomote-jima,91
+47918,Ishigaki-jima,91
+47927,Miyako-jima,91
+47929,Kume-jima,91
+47936,Naha,91
+47940,Nago,91
+47945,Minami-Daito,91
+0,Link to Okinawa Prefecture,91
+89532,Showa,99

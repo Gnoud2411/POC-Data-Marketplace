@@ -1,0 +1,6 @@
+apache-airflow-providers-snowflake
+apache-airflow-providers-amazon
+snowflake-connector-python
+astronomer-cosmos
+pandas
+bs4

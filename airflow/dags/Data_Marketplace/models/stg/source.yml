@@ -1,0 +1,22 @@
+version: 2
+
+sources: 
+  - name: Raw
+    database: POC_Data_Marketplace
+    schema: RAW 
+    tables:  
+      - name: Province
+        identifier: RAW_PROVINCE
+        description: "This table contains information of provinces | regions in Japan"
+
+      - name: City 
+        identifier: RAW_CITY 
+        description: "This table contains information of citys in Japan"
+
+      - name: Weather_Data
+        identifier: RAW_WEATHER_DATA
+        loaded_at_field: INPUT_DATE 
+        freshness: 
+          warn_after: {count: 1, period: day}  # Cảnh báo sau 1 ngày
+          error_after: {count: 3, period: day} # Lỗi sau 3 ngày
+

@@ -1,0 +1,17 @@
+﻿ID,Direction_En,Direction_Ja,Degrees
+1,North,北,"0° or 360°"
+2,North-Northeast,北北東,"22,5°"
+3,Northeast,北東,45°
+4,East-Northeast,東北東,"67,5°"
+5,East,東,90°
+6,East-Southeast,東南東,"112,5°"
+7,Southeast,南東,135°
+8,South-Southeast,南南東,"157,5°"
+9,South,南,180°
+10,South-Southwest,南南西,"202,5°"
+11,Southwest,南西,225°
+12,West-Southwest,西南西,"247,5°"
+13,West,西,270°
+14,West-Northwest,西北西,"292,5°"
+15,Northwest,北西,315°
+16,North-Northwest,北北西,"337,5°"

@@ -1,0 +1,22 @@
+[2024-08-19T07:22:15.726+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-19T07:22:15.767+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_python_email_dag.send_email_task manual__2024-08-19T07:22:14.050661+00:00 [queued]>
+[2024-08-19T07:22:15.791+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_python_email_dag.send_email_task manual__2024-08-19T07:22:14.050661+00:00 [queued]>
+[2024-08-19T07:22:15.793+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-19T07:22:15.823+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): send_email_task> on 2024-08-19 07:22:14.050661+00:00
+[2024-08-19T07:22:15.834+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=90) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-19T07:22:15.838+0000] {standard_task_runner.py:63} INFO - Started process 91 to run task
+[2024-08-19T07:22:15.838+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'test_python_email_dag', 'send_email_task', 'manual__2024-08-19T07:22:14.050661+00:00', '--job-id', '1358', '--raw', '--subdir', 'DAGS_FOLDER/Test_Email.py', '--cfg-path', '/tmp/tmpkyjsduwd']
+[2024-08-19T07:22:15.844+0000] {standard_task_runner.py:91} INFO - Job 1358: Subtask send_email_task
+[2024-08-19T07:22:15.968+0000] {task_command.py:426} INFO - Running <TaskInstance: test_python_email_dag.send_email_task manual__2024-08-19T07:22:14.050661+00:00 [running]> on host ubuntu
+[2024-08-19T07:22:16.228+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test_python_email_dag' AIRFLOW_CTX_TASK_ID='send_email_task' AIRFLOW_CTX_EXECUTION_DATE='2024-08-19T07:22:14.050661+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-19T07:22:14.050661+00:00'
+[2024-08-19T07:22:16.231+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-19T07:22:16.307+0000] {base.py:84} INFO - Using connection ID 'smtp_default' for task execution.
+[2024-08-19T07:22:19.033+0000] {logging_mixin.py:188} INFO - Email đã được gửi thành công từ Airflow!
+[2024-08-19T07:22:19.189+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-19T07:22:19.192+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-19T07:22:19.213+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=test_python_email_dag, task_id=send_email_task, run_id=manual__2024-08-19T07:22:14.050661+00:00, execution_date=20240819T072214, start_date=20240819T072215, end_date=20240819T072219
+[2024-08-19T07:22:19.277+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-19T07:22:19.318+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-19T07:22:19.324+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

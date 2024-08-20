@@ -1,0 +1,26 @@
+[2024-08-13T15:53:36.368+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-13T15:53:36.609+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.sleep_for_10_seconds manual__2024-08-13T15:52:30.060035+00:00 [queued]>
+[2024-08-13T15:53:36.624+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.sleep_for_10_seconds manual__2024-08-13T15:52:30.060035+00:00 [queued]>
+[2024-08-13T15:53:36.625+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-13T15:53:36.648+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): sleep_for_10_seconds> on 2024-08-13 15:52:30.060035+00:00
+[2024-08-13T15:53:36.659+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=384) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-13T15:53:36.663+0000] {standard_task_runner.py:63} INFO - Started process 386 to run task
+[2024-08-13T15:53:36.663+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'sleep_for_10_seconds', 'manual__2024-08-13T15:52:30.060035+00:00', '--job-id', '58', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmp4p7cggb_']
+[2024-08-13T15:53:36.667+0000] {standard_task_runner.py:91} INFO - Job 58: Subtask sleep_for_10_seconds
+[2024-08-13T15:53:36.686+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-13T15:53:36.736+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.sleep_for_10_seconds manual__2024-08-13T15:52:30.060035+00:00 [running]> on host ubuntu
+[2024-08-13T15:53:36.838+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='sleep_for_10_seconds' AIRFLOW_CTX_EXECUTION_DATE='2024-08-13T15:52:30.060035+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-13T15:52:30.060035+00:00'
+[2024-08-13T15:53:36.840+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-13T15:53:36.858+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-08-13T15:53:36.860+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'sleep 10']
+[2024-08-13T15:53:36.890+0000] {subprocess.py:86} INFO - Output:
+[2024-08-13T15:53:46.894+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-08-13T15:53:46.898+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-13T15:53:46.936+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=sleep_for_10_seconds, run_id=manual__2024-08-13T15:52:30.060035+00:00, execution_date=20240813T155230, start_date=20240813T155336, end_date=20240813T155346
+[2024-08-13T15:53:46.985+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-13T15:53:47.041+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-13T15:53:47.048+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

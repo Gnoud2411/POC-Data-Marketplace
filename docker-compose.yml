@@ -1,0 +1,225 @@
+# Định nghĩa phiên bản của Docker Compose
+#version: '3.8' 
+
+# x-airflow-common là 1 cấu hình chung được sử dụng cho tất cả các Service của Airflow. Nó bao gồm:
+# + Docker Images
+# + Environment Variables
+# + Volumes, User và Depends_on
+x-airflow-common:
+  &airflow-common
+  # image: ${AIRFLOW_IMAGE_NAME:-extended_airflow:latest}
+  # Nếu muốn tự Custom Airflow ta có thể tạo 1 Docker file, Comment lệnh image và Uncomment lệnh build
+  build: ./airflow
+  environment:
+    &airflow-common-env
+    AIRFLOW__CORE__PARALLELISM: 64
+    AIRFLOW__CORE__MAX_ACTIVE_TASKS_PER_DAG: 32
+    AIRFLOW__CORE__MAX_ACTIVE_RUNS_PER_DAG: 1
+    AIRFLOW__SCHEDULER__PARSING_PROCESSES: 4
+    AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+    AIRFLOW__CELERY__WORKER_CONCURRENCY: 8
+    AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+    AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0 
+    AIRFLOW__CORE__FERNET_KEY: ${FERNET_KEY}
+    AIRFLOW__WEBSERVER__SECRET_KEY: ${SECRET_KEY}
+    AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'False'
+    AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
+    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
+  # Ánh xạ các thư mục trên host vào container để chia sẻ dữ liệu
+  volumes:
+    - ./airflow/dags:/opt/airflow/dags
+    - ./airflow/logs:/opt/airflow/logs
+    - ./airflow/airflow.cfg:/usr/local/airflow/airflow.cfg
+    # - ./airflow/dags/Data_Marketplace:/usr/local/airflow/dags/Data_Marketplace
+  #  - ./airflow//plugins:/opt/airflow/plugins
+  # Xác định người dùng và nhóm mà container sẽ chạy dưới quyền của họ
+  user: "${AIRFLOW_UID:-50000}:0"
+  # Đảm bảo Service phụ thuộc phải ở trạng thái sẵn sàng (Healthy) hoặc hoàn thành trước khi Service được khởi động
+  depends_on:
+    &airflow-common-depends-on
+    redis:
+      condition: service_healthy
+    postgres:
+      condition: service_healthy
+
+services:
+######################################################
+# AIRFLOW                                            #
+######################################################
+  # Meta Database
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 5
+    restart: always
+
+  # Messages Broker
+  redis:
+    image: redis:7.2-bookworm
+    expose:
+      - 6379
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 30s
+      retries: 50
+      start_period: 30s
+    restart: always
+    volumes:
+      - redis_volume:/data
+  
+  # Web UI
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+  # Điều phối và lên lịch các DAG và task
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    healthcheck:
+      # Uncomment nếu thực thi Clery Executor trên Multi Node
+      #test: ["CMD-SHELL", 'airflow jobs check --job-type SchedulerJob --hostname "$${HOSTNAME}"']
+      test: ["CMD", "curl", "--fail", "http://localhost:8974/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+  # Celery Worker - Xử lý các Task Instance
+  airflow-worker:
+    <<: *airflow-common
+    command: celery worker
+    hostname: ${HOSTNAME}
+    ports:
+      - 8793:8793
+    healthcheck:
+      # yamllint disable rule:line-length
+      test:
+        - "CMD-SHELL"
+        - 'celery --app airflow.providers.celery.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}" || celery --app airflow.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}"'
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    environment:
+      <<: *airflow-common-env
+      DUMB_INIT_SETSID: "0"
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+  # Triggerer - Xử lý các sự kiện và kích hoạt Task
+  airflow-triggerer:
+    <<: *airflow-common
+    command: triggerer
+    healthcheck:
+      test: ["CMD-SHELL", 'airflow jobs check --job-type TriggererJob --hostname "$${HOSTNAME}"']
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+  # Airflow Init - Kiểm tra và thiết lập ban đầu: Kiểm tra phiên bản của Airflow và tài nguyên hệ thống, tạo thư mục cần thiết và thiết lập quyền sử hữu
+  airflow-init:
+    <<: *airflow-common
+    entrypoint: /bin/bash
+    # yamllint disable rule:line-length
+    command:
+      - -c
+      - |
+        if [[ -z "${AIRFLOW_UID}" ]]; then
+          echo
+          echo -e "\033[1;33mWARNING!!!: AIRFLOW_UID not set!\e[0m"
+          echo
+        fi
+        mkdir -p /sources/logs /sources/dags /sources/plugins
+        chown -R "${AIRFLOW_UID}:0" /sources/{logs,dags,plugins}
+        exec /entrypoint airflow version
+    # yamllint enable rule:line-length
+    environment:
+      <<: *airflow-common-env
+      _AIRFLOW_DB_MIGRATE: 'true'
+      _AIRFLOW_WWW_USER_CREATE: 'true'
+      _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow}
+      _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-airflow}
+      _PIP_ADDITIONAL_REQUIREMENTS: ''
+    user: "0:0"
+    volumes:
+      - ./airflow:/sources
+
+  # Airflow CLI - Giao diện dòng lệnh để tương tác với Airflow
+  airflow-cli:
+    <<: *airflow-common
+    profiles:
+      - debug
+    environment:
+      <<: *airflow-common-env
+      CONNECTION_CHECK_MAX_COUNT: "0"
+    command:
+      - bash
+      - -c
+      - airflow
+
+  # Flower - Web UI để giám sát các Worker của Celery
+  flower:
+    <<: *airflow-common
+    command: celery flower
+    profiles:
+      - flower
+    ports:
+      - "5555:5555"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:5555/"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+# Định nghĩa volume cho Metadatabase PostgreSQL
+volumes:
+  postgres-db-volume:
+  redis_volume:

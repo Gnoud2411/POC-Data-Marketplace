@@ -1,0 +1,30 @@
+[2024-08-19T05:36:13.481+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-19T05:36:13.503+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.generate_output_file manual__2024-08-19T05:35:58.387544+00:00 [queued]>
+[2024-08-19T05:36:13.514+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.generate_output_file manual__2024-08-19T05:35:58.387544+00:00 [queued]>
+[2024-08-19T05:36:13.515+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-19T05:36:13.698+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_output_file> on 2024-08-19 05:35:58.387544+00:00
+[2024-08-19T05:36:13.707+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2153) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-19T05:36:13.710+0000] {standard_task_runner.py:63} INFO - Started process 2155 to run task
+[2024-08-19T05:36:13.709+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'generate_output_file', 'manual__2024-08-19T05:35:58.387544+00:00', '--job-id', '1340', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmpxvo2u_1z']
+[2024-08-19T05:36:13.713+0000] {standard_task_runner.py:91} INFO - Job 1340: Subtask generate_output_file
+[2024-08-19T05:36:13.767+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.generate_output_file manual__2024-08-19T05:35:58.387544+00:00 [running]> on host ubuntu
+[2024-08-19T05:36:13.882+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='dohung24112002@gmail.com' AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='generate_output_file' AIRFLOW_CTX_EXECUTION_DATE='2024-08-19T05:35:58.387544+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-19T05:35:58.387544+00:00'
+[2024-08-19T05:36:13.885+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-19T05:36:13.918+0000] {logging_mixin.py:188} INFO - Generated output file: Data_Weather-20240818.csv
+[2024-08-19T05:36:13.920+0000] {logging_mixin.py:188} INFO - Execution Date: 2024/08/18
+[2024-08-19T05:36:13.975+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-19T05:36:13.977+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-19T05:36:14.005+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=generate_output_file, run_id=manual__2024-08-19T05:35:58.387544+00:00, execution_date=20240819T053558, start_date=20240819T053613, end_date=20240819T053614
+[2024-08-19T05:36:14.046+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-19T05:36:14.070+0000] {dagrun.py:940} ERROR - Failed to get task for ti <TaskInstance: Weather_Data_Extraction.invoke_lambda_task manual__2024-08-19T05:35:58.387544+00:00 [None]>. Marking it as removed.
+[2024-08-19T05:36:14.075+0000] {dagrun.py:940} ERROR - Failed to get task for ti <TaskInstance: Weather_Data_Extraction.check_s3_file manual__2024-08-19T05:35:58.387544+00:00 [None]>. Marking it as removed.
+[2024-08-19T05:36:14.077+0000] {dagrun.py:940} ERROR - Failed to get task for ti <TaskInstance: Weather_Data_Extraction.copy_csv_to_table manual__2024-08-19T05:35:58.387544+00:00 [None]>. Marking it as removed.
+[2024-08-19T05:36:14.079+0000] {dagrun.py:940} ERROR - Failed to get task for ti <TaskInstance: Weather_Data_Extraction.sleep_for_10_seconds manual__2024-08-19T05:35:58.387544+00:00 [None]>. Marking it as removed.
+[2024-08-19T05:36:14.081+0000] {dagrun.py:940} ERROR - Failed to get task for ti <TaskInstance: Weather_Data_Extraction.weather_data_models.fct_weather_data.run manual__2024-08-19T05:35:58.387544+00:00 [None]>. Marking it as removed.
+[2024-08-19T05:36:14.083+0000] {dagrun.py:940} ERROR - Failed to get task for ti <TaskInstance: Weather_Data_Extraction.weather_data_models.fct_weather_data.test manual__2024-08-19T05:35:58.387544+00:00 [None]>. Marking it as removed.
+[2024-08-19T05:36:14.085+0000] {dagrun.py:940} ERROR - Failed to get task for ti <TaskInstance: Weather_Data_Extraction.weather_data_models.stg_weather_data_run manual__2024-08-19T05:35:58.387544+00:00 [None]>. Marking it as removed.
+[2024-08-19T05:36:14.089+0000] {dagrun.py:940} ERROR - Failed to get task for ti <TaskInstance: Weather_Data_Extraction.Trigger_DAG_Prediction_Model manual__2024-08-19T05:35:58.387544+00:00 [None]>. Marking it as removed.
+[2024-08-19T05:36:14.106+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-19T05:36:14.111+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

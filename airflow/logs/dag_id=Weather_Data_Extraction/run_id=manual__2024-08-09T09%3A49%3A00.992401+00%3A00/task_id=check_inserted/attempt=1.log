@@ -1,0 +1,42 @@
+[2024-08-09T09:49:07.116+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-09T09:49:07.309+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.check_inserted manual__2024-08-09T09:49:00.992401+00:00 [queued]>
+[2024-08-09T09:49:07.318+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.check_inserted manual__2024-08-09T09:49:00.992401+00:00 [queued]>
+[2024-08-09T09:49:07.318+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-09T09:49:07.334+0000] {taskinstance.py:2330} INFO - Executing <Task(BranchPythonOperator): check_inserted> on 2024-08-09 09:49:00.992401+00:00
+[2024-08-09T09:49:07.346+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2386) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-09T09:49:07.347+0000] {standard_task_runner.py:63} INFO - Started process 2388 to run task
+[2024-08-09T09:49:07.351+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'check_inserted', 'manual__2024-08-09T09:49:00.992401+00:00', '--job-id', '156', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmpbg_ecy66']
+[2024-08-09T09:49:07.354+0000] {standard_task_runner.py:91} INFO - Job 156: Subtask check_inserted
+[2024-08-09T09:49:07.370+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-09T09:49:07.410+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.check_inserted manual__2024-08-09T09:49:00.992401+00:00 [running]> on host ubuntu
+[2024-08-09T09:49:07.519+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='check_inserted' AIRFLOW_CTX_EXECUTION_DATE='2024-08-09T09:49:00.992401+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-09T09:49:00.992401+00:00'
+[2024-08-09T09:49:07.521+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-09T09:49:07.536+0000] {baseoperator.py:400} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2024-08-09T09:49:07.537+0000] {logging_mixin.py:188} INFO - 2024-08-08
+[2024-08-09T09:49:07.537+0000] {logging_mixin.py:188} INFO - <class 'pendulum.date.Date'>
+[2024-08-09T09:49:07.553+0000] {base.py:84} INFO - Using connection ID 'snowflake_conn_raw' for task execution.
+[2024-08-09T09:49:07.555+0000] {connection.py:399} INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.12.4, Platform: Linux-6.8.0-1009-aws-x86_64-with-glibc2.36
+[2024-08-09T09:49:07.555+0000] {connection.py:1239} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-08-09T09:49:08.357+0000] {logging_mixin.py:188} INFO - Connected Successfully!
+[2024-08-09T09:49:08.357+0000] {logging_mixin.py:188} INFO - 
+        SELECT MAX(INPUT_DATE) FROM RAW_WEATHER_DATA;
+    
+[2024-08-09T09:49:08.517+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2024-08-09T09:49:08.517+0000] {logging_mixin.py:188} INFO - 2024-08-04
+[2024-08-09T09:49:08.518+0000] {logging_mixin.py:188} INFO - <class 'pendulum.date.Date'>
+[2024-08-09T09:49:08.518+0000] {connection.py:762} INFO - closed
+[2024-08-09T09:49:08.633+0000] {connection.py:768} INFO - No async queries seem to be running, deleting session
+[2024-08-09T09:49:08.762+0000] {logging_mixin.py:188} INFO - invoke_lambda_task task will execute
+[2024-08-09T09:49:08.763+0000] {python.py:237} INFO - Done. Returned value was: invoke_lambda_task
+[2024-08-09T09:49:08.764+0000] {branch.py:36} INFO - Branch into invoke_lambda_task
+[2024-08-09T09:49:08.764+0000] {skipmixin.py:178} INFO - Following branch invoke_lambda_task
+[2024-08-09T09:49:08.781+0000] {skipmixin.py:246} INFO - Skipping tasks [('no_new_data', -1)]
+[2024-08-09T09:49:08.805+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-09T09:49:08.825+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=check_inserted, run_id=manual__2024-08-09T09:49:00.992401+00:00, execution_date=20240809T094900, start_date=20240809T094907, end_date=20240809T094908
+[2024-08-09T09:49:08.848+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-09T09:49:08.892+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-09T09:49:08.893+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

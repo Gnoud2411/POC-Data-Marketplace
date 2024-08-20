@@ -1,0 +1,33 @@
+[2024-08-16T08:59:56.839+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-16T08:59:56.870+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Prediction_Model.Call_Prepare_Data_Procedure manual__2024-08-16T08:59:42.035870+00:00 [queued]>
+[2024-08-16T08:59:56.883+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Prediction_Model.Call_Prepare_Data_Procedure manual__2024-08-16T08:59:42.035870+00:00 [queued]>
+[2024-08-16T08:59:56.884+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-16T08:59:56.913+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): Call_Prepare_Data_Procedure> on 2024-08-16 08:59:42.035870+00:00
+[2024-08-16T08:59:56.926+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=634) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-16T08:59:56.930+0000] {standard_task_runner.py:63} INFO - Started process 636 to run task
+[2024-08-16T08:59:56.932+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Prediction_Model', 'Call_Prepare_Data_Procedure', 'manual__2024-08-16T08:59:42.035870+00:00', '--job-id', '1123', '--raw', '--subdir', 'DAGS_FOLDER/Prediction_Model.py', '--cfg-path', '/tmp/tmp0si7y7ij']
+[2024-08-16T08:59:56.938+0000] {standard_task_runner.py:91} INFO - Job 1123: Subtask Call_Prepare_Data_Procedure
+[2024-08-16T08:59:57.039+0000] {task_command.py:426} INFO - Running <TaskInstance: Prediction_Model.Call_Prepare_Data_Procedure manual__2024-08-16T08:59:42.035870+00:00 [running]> on host ubuntu
+[2024-08-16T08:59:57.170+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Prediction_Model' AIRFLOW_CTX_TASK_ID='Call_Prepare_Data_Procedure' AIRFLOW_CTX_EXECUTION_DATE='2024-08-16T08:59:42.035870+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-16T08:59:42.035870+00:00'
+[2024-08-16T08:59:57.172+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-16T08:59:57.189+0000] {logging_mixin.py:188} INFO - <class 'datetime.date'>
+[2024-08-16T08:59:57.203+0000] {base.py:84} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-08-16T08:59:57.205+0000] {connection.py:399} INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.12.4, Platform: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2024-08-16T08:59:57.206+0000] {connection.py:1239} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-08-16T08:59:58.657+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2024-08-16T08:59:58.659+0000] {sql.py:487} INFO - Running statement: CALL PREPARE_DATA('2024-08-15');, parameters: None
+[2024-08-16T09:00:05.382+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2024-08-16T09:00:05.384+0000] {sql.py:496} INFO - Rows affected: 1
+[2024-08-16T09:00:05.385+0000] {snowflake.py:410} INFO - Rows affected: 1
+[2024-08-16T09:00:05.386+0000] {snowflake.py:411} INFO - Snowflake query id: 01b6627b-3201-2de2-0009-3646000b27da
+[2024-08-16T09:00:05.504+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2024-08-16T09:00:05.505+0000] {connection.py:762} INFO - closed
+[2024-08-16T09:00:06.823+0000] {connection.py:768} INFO - No async queries seem to be running, deleting session
+[2024-08-16T09:00:06.944+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-16T09:00:06.946+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-16T09:00:06.962+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Prediction_Model, task_id=Call_Prepare_Data_Procedure, run_id=manual__2024-08-16T08:59:42.035870+00:00, execution_date=20240816T085942, start_date=20240816T085956, end_date=20240816T090006
+[2024-08-16T09:00:06.993+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-16T09:00:07.008+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-16T09:00:07.011+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

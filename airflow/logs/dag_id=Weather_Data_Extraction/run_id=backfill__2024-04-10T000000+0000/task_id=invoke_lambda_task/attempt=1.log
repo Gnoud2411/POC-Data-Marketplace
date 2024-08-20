@@ -1,0 +1,26 @@
+[2024-08-14T05:19:46.566+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-14T05:19:46.830+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.invoke_lambda_task backfill__2024-04-10T00:00:00+00:00 [queued]>
+[2024-08-14T05:19:46.861+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.invoke_lambda_task backfill__2024-04-10T00:00:00+00:00 [queued]>
+[2024-08-14T05:19:46.863+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-14T05:19:46.898+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): invoke_lambda_task> on 2024-04-10 00:00:00+00:00
+[2024-08-14T05:19:46.914+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3363) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-14T05:19:46.919+0000] {standard_task_runner.py:63} INFO - Started process 3365 to run task
+[2024-08-14T05:19:46.919+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'invoke_lambda_task', 'backfill__2024-04-10T00:00:00+00:00', '--job-id', '706', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmpg38_6piz']
+[2024-08-14T05:19:46.926+0000] {standard_task_runner.py:91} INFO - Job 706: Subtask invoke_lambda_task
+[2024-08-14T05:19:47.034+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.invoke_lambda_task backfill__2024-04-10T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-14T05:19:47.263+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='invoke_lambda_task' AIRFLOW_CTX_EXECUTION_DATE='2024-04-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2024-04-10T00:00:00+00:00'
+[2024-08-14T05:19:47.267+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-14T05:19:47.335+0000] {logging_mixin.py:188} INFO - Data_Weather-20240410.csv
+[2024-08-14T05:19:47.337+0000] {logging_mixin.py:188} INFO - 2024/04/10
+[2024-08-14T05:19:47.338+0000] {logging_mixin.py:188} INFO - {"execution_date": "2024/04/10", "file_name": "Data_Weather-20240410.csv"}
+[2024-08-14T05:19:47.339+0000] {logging_mixin.py:188} INFO - https://eyzyhdwl8l.execute-api.ap-southeast-2.amazonaws.com/dev?execution_date=2024/04/10&file_name=Data_Weather-20240410.csv
+[2024-08-14T05:20:17.010+0000] {logging_mixin.py:188} INFO - Failed to invoke Lambda function.
+[2024-08-14T05:20:17.012+0000] {logging_mixin.py:188} INFO - Response: {"message": "Endpoint request timed out"}
+[2024-08-14T05:20:17.018+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-14T05:20:17.021+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-14T05:20:17.044+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=invoke_lambda_task, run_id=backfill__2024-04-10T00:00:00+00:00, execution_date=20240410T000000, start_date=20240814T051946, end_date=20240814T052017
+[2024-08-14T05:20:17.099+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-14T05:20:17.139+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-14T05:20:17.143+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

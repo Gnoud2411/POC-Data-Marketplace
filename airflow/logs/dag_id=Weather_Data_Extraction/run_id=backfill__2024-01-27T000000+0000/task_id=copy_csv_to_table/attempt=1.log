@@ -1,0 +1,35 @@
+[2024-08-14T03:23:55.669+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-14T03:23:55.847+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Weather_Data_Extraction.copy_csv_to_table backfill__2024-01-27T00:00:00+00:00 [queued]>
+[2024-08-14T03:23:55.860+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Weather_Data_Extraction.copy_csv_to_table backfill__2024-01-27T00:00:00+00:00 [queued]>
+[2024-08-14T03:23:55.860+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-14T03:23:55.877+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): copy_csv_to_table> on 2024-01-27 00:00:00+00:00
+[2024-08-14T03:23:55.886+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1151) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-14T03:23:55.889+0000] {standard_task_runner.py:63} INFO - Started process 1153 to run task
+[2024-08-14T03:23:55.890+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Weather_Data_Extraction', 'copy_csv_to_table', 'backfill__2024-01-27T00:00:00+00:00', '--job-id', '458', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Data_Weather_Extraction.py', '--cfg-path', '/tmp/tmppgqx4nbs']
+[2024-08-14T03:23:55.894+0000] {standard_task_runner.py:91} INFO - Job 458: Subtask copy_csv_to_table
+[2024-08-14T03:23:55.959+0000] {task_command.py:426} INFO - Running <TaskInstance: Weather_Data_Extraction.copy_csv_to_table backfill__2024-01-27T00:00:00+00:00 [running]> on host ubuntu
+[2024-08-14T03:23:56.082+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ducky' AIRFLOW_CTX_DAG_ID='Weather_Data_Extraction' AIRFLOW_CTX_TASK_ID='copy_csv_to_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2024-01-27T00:00:00+00:00'
+[2024-08-14T03:23:56.084+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-14T03:23:56.118+0000] {base.py:84} INFO - Using connection ID 'snowflake_conn_raw' for task execution.
+[2024-08-14T03:23:56.120+0000] {connection.py:399} INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.12.4, Platform: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2024-08-14T03:23:56.121+0000] {connection.py:1239} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-08-14T03:23:57.064+0000] {logging_mixin.py:188} INFO - Connected to Snowflake Successfully!
+[2024-08-14T03:23:57.087+0000] {logging_mixin.py:188} INFO - s3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240127.csv
+[2024-08-14T03:23:57.088+0000] {logging_mixin.py:188} INFO - 
+        COPY INTO RAW_WEATHER_DATA
+        FROM 's3://s3-poc-data-marketplace/Weather_Data/Data_Weather-20240127.csv'
+        CREDENTIALS = (AWS_KEY_ID='AKIA5FTZBUCGQ4SERYPG' AWS_SECRET_KEY='***')
+        FILE_FORMAT = (TYPE = 'CSV', DATE_FORMAT = 'YYYY-MM-DD', SKIP_HEADER = 1, ENCODING='UTF8')
+        RETURN_FAILED_ONLY = TRUE;
+        
+[2024-08-14T03:23:59.105+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2024-08-14T03:23:59.106+0000] {connection.py:762} INFO - closed
+[2024-08-14T03:23:59.203+0000] {connection.py:768} INFO - No async queries seem to be running, deleting session
+[2024-08-14T03:23:59.321+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-14T03:23:59.323+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-14T03:23:59.338+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Weather_Data_Extraction, task_id=copy_csv_to_table, run_id=backfill__2024-01-27T00:00:00+00:00, execution_date=20240127T000000, start_date=20240814T032355, end_date=20240814T032359
+[2024-08-14T03:23:59.367+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-14T03:23:59.394+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-14T03:23:59.546+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
