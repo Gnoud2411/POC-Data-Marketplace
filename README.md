@@ -1,6 +1,6 @@
 # POC-Data-Marketplace
 ## Build a data pipeline to extract weather data and create a temperature prediction model for the next 3 days
-![Architectural Description](document/POC_Data_Marketplace-Architect_vr2.drawio.drawio.png)
+![Architectural Description](documents/POC_Data_Marketplace-Architect_vr2.drawio.png)
 
 # Overview of the Data Pipeline for Weather Data Extraction and Temperature Prediction Model
 
